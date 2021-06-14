@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="jquery.easings.min.js"></script>
+    <script src="jquery.multiscroll.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="jquery.multiscroll.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="jquery.multiscroll.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#myContainer').multiscroll({
+          sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
+          anchors: ['first', 'second', 'third'],
+          menu: '#menu',
+          css3: true,
+          paddingTop: '70px',
+          paddingBottom: '70px',
+        });
+      });
+    </script>
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="multiscroll">
+      <div class="ms-left">
+        <div class="ms-section">Some section</div>
+        <div class="ms-section">Some section</div>
+        <div class="ms-section">Some section</div>
+      </div>
+      <div class="ms-right">
+        <div class="ms-section">Some section</div>
+        <div class="ms-section">Some section</div>
+        <div class="ms-section">Some section</div>
+      </div>
+    </div>
+
+    <!-- <script>
+      $(document).ready(function () {
+        $('#multiscroll').multiscroll();
+      });
+    </script> -->
+  </body>
+</html>
