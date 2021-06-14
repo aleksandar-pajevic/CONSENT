@@ -23,29 +23,36 @@
       $(document).ready(function () {
         $('#myContainer').multiscroll({
           sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
-          anchors: ['first', 'second', 'third'],
+          anchors: ['first', 'second', 'third', 'fourth'],
           menu: '#menu',
           css3: true,
           paddingTop: '70px',
-          paddingBottom: '70px',
+          loopTop: true,
+          loopBottom: true,
+          navigation: true,
+          navigationColor: '#ffffff',
         });
       });
     </script>
     <script src="index.js"></script>
     <title>Document</title>
   </head>
-
+  <div id="header"></div>
   <body>
     <div id="multiscroll">
       <div class="ms-left">
-        <div class="ms-section">Some section</div>
-        <div class="ms-section">Some section</div>
-        <div class="ms-section">Some section</div>
+        <div class="ms-section first">section one</div>
+        <div class="ms-section second">section two</div>
+        <div class="ms-section third">section three</div>
+        <div class="ms-section fourth">section four</div>
+        <!-- <div class="ms-section fifth">section five</div> -->
       </div>
       <div class="ms-right">
-        <div class="ms-section">Some section</div>
-        <div class="ms-section">Some section</div>
-        <div class="ms-section">Some section</div>
+        <div class="ms-section first">section one</div>
+        <div class="ms-section second">section two</div>
+        <div class="ms-section third">section three</div>
+        <div class="ms-section fourth">section four</div>
+        <!-- <div class="ms-section fifth">section five</div> -->
       </div>
     </div>
 

@@ -1,0 +1,48 @@
+#header {
+  top: 0px;
+  position: fixed;
+  height: 70px;
+  display: block;
+  width: 100%;
+  background: #333;
+  z-index: 9;
+  text-align: center;
+}
+.ms-left div {
+  background-size: cover;
+  background-position: right;
+}
+.ms-left .first {
+  background-image: url(assets/pictures/slides/1L.jpg);
+}
+.ms-left .second {
+  background-image: url(assets/pictures/slides/2L.jpg);
+}
+.ms-left .third {
+  background-image: url(assets/pictures/slides/3L.jpg);
+}
+.ms-left .fourth {
+  background-image: url(assets/pictures/slides/4L.jpg);
+}
+.ms-left .fifth {
+  background-image: url(assets/pictures/slides/5L.jpg);
+}
+
+.ms-right div {
+  background-size: cover;
+}
+.ms-right .first {
+  background-image: url(assets/pictures/slides/1R.jpg);
+}
+.ms-right .second {
+  background-image: url(assets/pictures/slides/2R.jpg);
+}
+.ms-right .third {
+  background-image: url(assets/pictures/slides/3R.jpg);
+}
+.ms-right .fourth {
+  background-image: url(assets/pictures/slides/4R.jpg);
+}
+.ms-right .fifth {
+  background-image: url(assets/pictures/slides/5R.jpg);
+}
