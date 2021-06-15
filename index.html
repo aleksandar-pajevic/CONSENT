@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="jquery.easings.min.js"></script>
-    <script src="jquery.multiscroll.min.js"></script>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="jquery.multiscroll.css" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
 
@@ -24,6 +24,7 @@
         $('#myContainer').multiscroll({
           sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
           anchors: ['first', 'second', 'third', 'fourth'],
+          verticalCentered: true,
           menu: '#menu',
           css3: true,
           paddingTop: '70px',
@@ -37,30 +38,33 @@
     <script src="index.js"></script>
     <title>Document</title>
   </head>
+
   <header id="header">
-    <nav class="navbar">
-      <a href="#" class="nav-logo">WebDev.</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link">Services</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="#"
+            ><img src="assets/pictures/CONSENTnav_logo2.png" alt="nav-logo"
+          /></a>
+        </div>
       </div>
-    </nav>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="#" tabindex="1">Home</a>
+        <a href="#" tabindex="1">What We Offer</a>
+        <a href="#" tabindex="1">Our Team</a>
+        <a href="#" tabindex="1">Contant</a>
+      </div>
+    </div>
   </header>
+
   <body>
     <div id="multiscroll">
       <div class="ms-left">
