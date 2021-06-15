@@ -174,3 +174,37 @@ body {
 .ms-right .fifth {
   background-image: url(assets/pictures/slides/5R.jpg);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.leftFirstHalf {
+  width: 100%;
+  height: 50%;
+  background-color: ghostwhite;
+  opacity: 0.4;
+  text-align: center;
+}
+.leftSecondHalf {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  opacity: 0.4;
+  text-align: center;
+}
+.rightFirstHalf {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  opacity: 0.4;
+  text-align: center;
+}
+.rightSecondHalf {
+  width: 100%;
+  height: 50%;
+  background-color: ghostwhite;
+  opacity: 0.4;
+  text-align: center;
+}
