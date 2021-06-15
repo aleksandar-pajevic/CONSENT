@@ -135,6 +135,7 @@ body {
 .ms-left {
   /* height: calc(100% - 70px) !important; */
   top: 70px !important;
+  font-family: 'Montserrat', sans-serif;
 }
 .ms-left div {
   background-size: cover;
@@ -160,6 +161,7 @@ body {
   /* height: calc(100% - 70px) !important; */
   right: 0px !important;
   top: 70px !important;
+  font-family: 'Montserrat', sans-serif;
 }
 .ms-right div {
   background-size: cover;
@@ -187,6 +189,9 @@ body {
   height: calc(100% - 0px);
 }
 .leftFirstHalf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50%;
   background-color: ghostwhite;
@@ -194,6 +199,9 @@ body {
   text-align: center;
 }
 .leftSecondHalf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50%;
   background-color: black;
@@ -201,6 +209,9 @@ body {
   text-align: center;
 }
 .rightFirstHalf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50%;
   background-color: black;
@@ -208,9 +219,17 @@ body {
   text-align: center;
 }
 .rightSecondHalf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50%;
   background-color: ghostwhite;
   opacity: 0.4;
   text-align: center;
+}
+.slideDescription {
+  max-width: 60%;
+  color: black;
+  font-weight: 400;
 }
