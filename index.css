@@ -132,6 +132,10 @@ body {
 #multiscroll-nav li .active span {
   background: gray;
 }
+.ms-left {
+  /* height: calc(100% - 70px) !important; */
+  top: 70px !important;
+}
 .ms-left div {
   background-size: cover;
   background-position: right;
@@ -153,7 +157,9 @@ body {
 }
 .ms-right {
   width: calc(50% + 1px);
-  right: 0px;
+  /* height: calc(100% - 70px) !important; */
+  right: 0px !important;
+  top: 70px !important;
 }
 .ms-right div {
   background-size: cover;
@@ -178,7 +184,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 0px);
 }
 .leftFirstHalf {
   width: 100%;
