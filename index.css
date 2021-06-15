@@ -1,3 +1,5 @@
+/* Navigation */
+
 #header {
   top: 0px;
   position: fixed;
@@ -7,6 +9,12 @@
   background: #333;
   z-index: 9;
   text-align: center;
+}
+
+/* multiscroll */
+
+#multiscroll-nav li .active span {
+  background: gray;
 }
 .ms-left div {
   background-size: cover;
