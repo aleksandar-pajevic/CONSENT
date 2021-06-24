@@ -48,7 +48,7 @@
     <script src="index.js"></script>
   </head>
 
-  <body onLoad="makeMeFocus()">
+  <body onLoad="homeFocus()">
     <header id="header">
       <div class="nav">
         <input type="checkbox" id="nav-check" />
@@ -66,9 +66,11 @@
         </div>
         <ul class="nav-links" onclick="whosActive(event)">
           <li><a href="#" id="home">Home</a></li>
-          <li><a href="#">What We Offer</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Contant</a></li>
+          <li><a href="#" id="whatWeOffer">What We Offer</a></li>
+          <li><a href="#" id="ourTeam">Our Team</a></li>
+          <li>
+            <a href="/pages/contact/contact.html" id="contact">Contact</a>
+          </li>
         </ul>
       </div>
     </header>

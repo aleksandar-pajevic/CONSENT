@@ -6,6 +6,18 @@ function whosActive(e) {
   e.target.className = 'activeNav';
 }
 
-function makeMeFocus() {
+function homeFocus() {
   document.getElementById('home').classList.add('activeNav');
+}
+
+function whatWeOfferFocus() {
+  document.getElementById('whatWeOffer').classList.add('activeNav');
+}
+
+function ourTeamFocus() {
+  document.getElementById('ourTeam').classList.add('activeNav');
+}
+
+function contactFocus() {
+  document.getElementById('contact').classList.add('activeNav');
 }
