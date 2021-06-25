@@ -48,33 +48,32 @@
     <script src="index.js"></script>
   </head>
 
-  <body onLoad="homeFocus()">
-    <header id="header">
-      <div class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <div class="nav-title">
-            <img src="assets/pictures/CONSENTnav_logo2.png" alt="nav-logo" />
-          </div>
+  <header id="header">
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src="assets/pictures/CONSENTnav_logo2.png" alt="nav-logo" />
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <ul class="nav-links" onclick="whosActive(event)">
-          <li><a href="#" id="home">Home</a></li>
-          <li><a href="#" id="whatWeOffer">What We Offer</a></li>
-          <li><a href="#" id="ourTeam">Our Team</a></li>
-          <li>
-            <a href="/pages/contact/contact.html" id="contact">Contact</a>
-          </li>
-        </ul>
       </div>
-    </header>
-
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <ul class="nav-links" onclick="whosActive(event)">
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="whatWeOffer">What We Offer</a></li>
+        <li><a href="#" id="ourTeam">Our Team</a></li>
+        <li>
+          <a href="/pages/contact/contact.html" id="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body onLoad="homeFocus()">
     <div id="multiscroll">
       <div class="ms-left">
         <div class="ms-section first">

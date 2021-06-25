@@ -1,0 +1,107 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #4d4d4d;
+}
+
+.page-content {
+  width: 40%;
+  background: #494949;
+  padding: 40px;
+  margin-left: auto;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  color: #3c3c3c;
+  font-size: 100%;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+h1 {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 200%;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact-form .text-input {
+  border: none;
+  padding: 10px 15px;
+  background: rgb(60, 60, 60);
+  color: white;
+  font-size: 120%;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  outline: none;
+  margin: 10px 0px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact-form textarea {
+  background: rgb(60, 60, 60);
+  resize: none;
+  padding: 15px;
+  height: 175px;
+  width: 400px;
+  margin: 10px 0px;
+  color: white;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 120%;
+  border: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgb(51, 47, 47);
+}
+
+.contact-form .send {
+  border: none;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 105%;
+  padding: 10px 20px;
+  width: 140px;
+  height: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 10px 0px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.contact-form .send:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+.contact-form label {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 105%;
+  margin-top: 20px;
+  display: block;
+}
+
+span.required {
+  color: red;
+}
