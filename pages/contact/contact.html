@@ -56,36 +56,34 @@
 
   <body onLoad="contactFocus()">
     <div class="page-content">
-      <h1>Get in contact</h1>
       <div id="map"></div>
-      <form class="contact-form">
-        <!-- <label for="name">Your Name: <span class="required">*</span></label> -->
-        <input
-          type="text"
-          class="text-input"
-          name="name"
-          placeholder="Name"
-        /><br />
-        <!-- <label for="email"
+      <div class="formWrap">
+        <h1>Get in contact</h1>
+        <form class="contact-form">
+          <!-- <label for="name">Your Name: <span class="required">*</span></label> -->
+          <input
+            type="text"
+            class="text-input"
+            name="name"
+            placeholder="Name"
+          /><br />
+          <!-- <label for="email"
           >Your Email Adress: <span class="required">*</span></label
         > -->
-        <input
-          type="text"
-          class="text-input"
-          name="email"
-          placeholder="Email"
-        /><br />
-        <input type="text" class="text-input" placeholder="Subject" />
-        <label for="message"
-          >Your Message: <span class="required">*</span></label
-        >
-        <textarea name="message" placeholder="Message"> </textarea><br />
-        <input type="submit" value="Send" class="send" />
-      </form>
+          <input
+            type="text"
+            class="text-input"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <input type="text" class="text-input" placeholder="Subject" />
+          <label for="message"
+            >Your Message: <span class="required">*</span></label
+          >
+          <textarea name="message" placeholder="Message"> </textarea><br />
+          <input type="submit" value="Send" class="send" />
+        </form>
+      </div>
     </div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
   </body>
 </html>

@@ -3,18 +3,26 @@ body {
   margin: 0;
   background: #4d4d4d;
 }
-
+#map {
+  height: 600px;
+  width: 50%;
+}
 .page-content {
-  width: 40%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
   background: #494949;
   padding: 40px;
-  margin-left: auto;
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   color: #3c3c3c;
   font-size: 100%;
   margin-bottom: 40px;
   margin-top: 70px;
+}
+.formWrap {
+  width: 30%;
 }
 
 h1 {
