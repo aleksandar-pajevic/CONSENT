@@ -4,16 +4,17 @@ body {
   background: #4d4d4d;
 }
 #map {
-  height: 600px;
-  width: 50%;
+  /* height: calc(100% - 70px); */
+  height: 650px;
+  width: 70%;
 }
 .page-content {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
   background: #494949;
-  padding: 40px;
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   color: #3c3c3c;
@@ -22,7 +23,8 @@ body {
   margin-top: 70px;
 }
 .formWrap {
-  width: 30%;
+  padding-top: 20px;
+  width: 28%;
 }
 
 h1 {

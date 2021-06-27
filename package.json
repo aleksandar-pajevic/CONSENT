@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "leaflet.tilelayer.colorfilter": "^1.2.5",
     "multiscroll.js": "^0.2.3"
   }
 }
