@@ -5,7 +5,7 @@ body {
 }
 #map {
   /* height: calc(100% - 70px); */
-  height: 650px;
+  height: 841px;
   width: 70%;
 }
 .page-content {
@@ -23,23 +23,26 @@ body {
   margin-top: 70px;
 }
 .formWrap {
-  padding-top: 20px;
   width: 28%;
 }
 
 h1 {
-  color: white;
+  color: whitesmoke;
   -webkit-font-smoothing: antialiased;
-  font-size: 200%;
-  margin-bottom: 30px;
-  margin-top: 0px;
+  font-size: 150%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
+hr {
+  width: 500px;
+  margin: 30px 0px;
+  color: whitesmoke;
+}
 
 .contact-form .text-input {
   border: none;
+  width: 500px;
   padding: 10px 15px;
   background: rgb(60, 60, 60);
   color: white;
@@ -48,11 +51,11 @@ h1 {
   outline: none;
   margin: 10px 0px;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact-form textarea {
@@ -60,7 +63,7 @@ h1 {
   resize: none;
   padding: 15px;
   height: 175px;
-  width: 400px;
+  width: 500px;
   margin: 10px 0px;
   color: white;
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -68,11 +71,11 @@ h1 {
   border: none;
   outline: none;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact-form input:focus,
@@ -82,25 +85,26 @@ h1 {
 
 .contact-form .send {
   border: none;
-  background-color: rgb(54, 54, 54);
-  color: white;
+  background-color: #e5a459;
+  color: rgb(54, 54, 54);
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 105%;
   padding: 10px 20px;
-  width: 140px;
+  width: 250px;
   height: 50px;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  margin: 10px 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0px 30px 0px;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
 }
 
 .contact-form .send:hover {
   background-color: rgb(36, 36, 36);
+  color: whitesmoke;
 }
 
 .contact-form label {
@@ -114,4 +118,9 @@ h1 {
 
 span.required {
   color: red;
+}
+
+.contact-mail,
+.contact-phone {
+  color: #999999;
 }
