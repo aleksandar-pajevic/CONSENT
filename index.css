@@ -218,7 +218,9 @@ body {
   text-align: center;
 }
 .slideDescription {
-  max-width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  max-width: 54%;
   color: black;
   font-weight: 400;
 }
@@ -268,7 +270,8 @@ body {
 .slideHeading,
 .slideButton,
 .slideDescription,
-.slideLogo {
+.slideLogoText,
+.slideLogoOrah {
   z-index: 10;
 }
 .slideHeading {
@@ -278,16 +281,21 @@ body {
   font-style: italic;
   position: absolute;
   top: 30%;
+  color: #1b1b1b;
 }
-.slideDescription {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-.slideLogo {
+
+.slideLogoText {
   position: absolute;
-  top: 7%;
-  right: 2%;
+  top: 5%;
+  right: 0%;
 }
+.slideLogoOrah{
+  position: absolute;
+  bottom: 20%;
+  right: 3%;
+  opacity: 0.5;
+}
+
 .slideButton {
   width: 180px;
   height: 50px;
