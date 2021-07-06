@@ -151,12 +151,6 @@ body {
 .ms-left .third {
   background-image: url(assets/pictures/slides/3L.jpg);
 }
-.ms-left .fourth {
-  background-image: url(assets/pictures/slides/4L.jpg);
-}
-.ms-left .fifth {
-  background-image: url(assets/pictures/slides/5L.jpg);
-}
 .ms-right {
   width: calc(50% + 1px);
   /* height: calc(100% - 70px) !important; */
@@ -176,12 +170,6 @@ body {
 }
 .ms-right .third {
   background-image: url(assets/pictures/slides/3R.jpg);
-}
-.ms-right .fourth {
-  background-image: url(assets/pictures/slides/4R.jpg);
-}
-.ms-right .fifth {
-  background-image: url(assets/pictures/slides/5R.jpg);
 }
 
 .container {
@@ -254,35 +242,27 @@ body {
 
 .left1-1,
 .right1-2 {
-  background-color: #be843cc9;
+  background-color: #b6a65c;
 }
 .left1-2,
 .right1-1 {
-  background-color: #23261f;
+  background-color: #3374a3;
 }
 .left2-1,
 .right2-2 {
-  background-color: #d1d2c8;
+  background-color: #b6bdcf;
 }
 .left2-2,
 .right2-1 {
-  background-color: #5b5d4b;
+  background-color: #040405;
 }
 .left3-1,
 .right3-2 {
-  background-color: #c9caca;
+  background-color: #be843cc9;
 }
 .left3-2,
 .right3-1 {
-  background-color: #313438;
-}
-.left4-1,
-.right4-2 {
-  background-color: #b6a65c;
-}
-.left4-2,
-.right4-1 {
-  background-color: #3374a3;
+  background-color: #23261f;
 }
 
 .slideHeading,
