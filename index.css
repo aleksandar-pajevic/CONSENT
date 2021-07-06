@@ -244,11 +244,11 @@ body {
 
 .left1-1,
 .right1-2 {
-  background-color: #b6a65c;
+  background-color: #635825;
 }
 .left1-2,
 .right1-1 {
-  background-color: #3374a3;
+  background-color: #112a68;
 }
 .left2-1,
 .right2-2 {
@@ -260,11 +260,15 @@ body {
 }
 .left3-1,
 .right3-2 {
-  background-color: #be843cc9;
+  /* background-color: #342836; */
+  background-color: #6f522e;
+
 }
 .left3-2,
 .right3-1 {
-  background-color: #23261f;
+  /* background-color: #6f726e; */
+  background-color: #1c2629;
+
 }
 
 .slideHeading,
@@ -281,7 +285,7 @@ body {
   font-style: italic;
   position: absolute;
   top: 30%;
-  color: #1b1b1b;
+  color: #131313;
 }
 
 .slideLogoText {
@@ -308,6 +312,8 @@ body {
   font-weight: 400;
   transition: all 0.2s ease-in-out;
   color: black;
+  text-decoration: none;
+  line-height: 50px;
 }
 .slideButton:hover {
   transform: scale(1.2);
