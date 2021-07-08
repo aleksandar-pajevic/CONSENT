@@ -99,7 +99,7 @@ hr {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  margin: 10px 0px 30px 0px;
+  margin: 10px 0px 20px 0px;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
 }
@@ -113,7 +113,7 @@ hr {
   color: white;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 105%;
+  font-size: 100%;
   margin-top: 20px;
   display: block;
 }
@@ -122,7 +122,11 @@ span.required {
   color: red;
 }
 
-.contact-mail,
-.contact-phone {
+.otherWayInfo{
+  display: flex;
   color: #999999;
+}
+
+.address{
+  margin-left: 100px;
 }
