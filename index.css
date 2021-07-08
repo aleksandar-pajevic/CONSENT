@@ -143,13 +143,13 @@ body {
   background-position: right;
 }
 .ms-left .first {
-  background-image: url(assets/pictures/slides/1L.jpg);
+  background-image: url(assets/pictures/slides/home/1L.jpg);
 }
 .ms-left .second {
-  background-image: url(assets/pictures/slides/2L.jpg);
+  background-image: url(assets/pictures/slides/home/2L.jpg);
 }
 .ms-left .third {
-  background-image: url(assets/pictures/slides/3L.jpg);
+  background-image: url(assets/pictures/slides/home/3L.jpg);
 }
 .ms-right {
   width: calc(50% + 1px);
@@ -163,13 +163,13 @@ body {
   background-position: left;
 }
 .ms-right .first {
-  background-image: url(assets/pictures/slides/1R.jpg);
+  background-image: url(assets/pictures/slides/home/1R.jpg);
 }
 .ms-right .second {
-  background-image: url(assets/pictures/slides/2R.jpg);
+  background-image: url(assets/pictures/slides/home/2R.jpg);
 }
 .ms-right .third {
-  background-image: url(assets/pictures/slides/3R.jpg);
+  background-image: url(assets/pictures/slides/home/3R.jpg);
 }
 
 .container {

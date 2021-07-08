@@ -1,0 +1,43 @@
+/* multiscroll */
+
+#multiscroll-nav li .active span {
+  background: gray;
+}
+.ms-left {
+  /* height: calc(100% - 70px) !important; */
+  top: 70px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.ms-left div {
+  background-size: cover;
+  background-position: right;
+}
+.ms-left .first {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/bulb/image_part_001.jpg);
+}
+.ms-left .second {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/business/image_part_001.jpg);
+}
+.ms-left .third {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/dueDiligence/image_part_001.jpg);
+}
+.ms-right {
+  width: calc(50% + 1px);
+  /* height: calc(100% - 70px) !important; */
+  right: 0px !important;
+  top: 70px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.ms-right div {
+  background-size: cover;
+  background-position: left;
+}
+.ms-right .first {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/bulb/image_part_002.jpg);
+}
+.ms-right .second {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/business/image_part_002.jpg);
+}
+.ms-right .third {
+  background-image: url(../../assets/pictures/slides/whatWeOffer/dueDiligence/image_part_002.jpg);
+}
