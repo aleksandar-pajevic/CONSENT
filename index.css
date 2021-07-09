@@ -54,11 +54,14 @@ body {
   align-items: center;
   font-size: 15px;
   list-style: none;
+  padding: 0;
 }
+
 
 .nav > .nav-links > li > a {
   /* display: inline-block; */
-  padding: 13px 10px 13px 10px;
+  /* padding: 13px 10px 13px 10px; */
+  padding: 26px 10px;
   text-decoration: none;
   color: #efefef;
 }
@@ -81,7 +84,7 @@ body {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 623px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -112,7 +115,7 @@ body {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 45px;
     left: 0px;
   }
   .nav > .nav-links > li > a {
@@ -123,7 +126,7 @@ body {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     overflow-y: auto;
   }
 }
