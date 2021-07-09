@@ -328,3 +328,19 @@ body {
 .slideButton:focus {
   outline: 0;
 }
+
+
+@media screen and (min-width: 1600px){
+.nav > .nav-links {
+  font-size: 25px;
+}
+#header {
+height: 120px;
+}
+.ms-left {
+  top: 120px !important;
+}
+.ms-right {
+  top: 120px !important;
+}
+}
