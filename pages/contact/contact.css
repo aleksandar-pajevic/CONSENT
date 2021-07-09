@@ -6,7 +6,7 @@ body {
 .page-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: calc(100vh - 70px);
   width: 100vw;
   background: #494949;
@@ -24,33 +24,38 @@ body {
 }
 
 .formWrap {
-  flex-basis: 28%;
+  height: calc(100vh - 70px);
+  flex-basis: 30%;
+  padding-top: 2vh;
 }
 
 h1 {
   color: whitesmoke;
   -webkit-font-smoothing: antialiased;
-  font-size: 150%;
+  font-size: 120%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 1vh 2vw;
+
 }
 hr {
-  width: 500px;
-  margin: 30px 0px;
+  width: 28vw;
+  margin: 1vh 2vw;
   color: whitesmoke;
 }
 
 .contact-form .text-input {
   border: none;
-  width: 500px;
-  padding: 10px 15px;
+  width: 28vw;
+  height: 6vh;
+  /* padding: 10px 15px; */
   background: rgb(60, 60, 60);
   color: white;
   font-size: 120%;
   font-family: 'Open Sans', Helvetica, sans-serif;
   outline: none;
-  margin: 10px 0px;
+  margin: 1vh 2vw;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -62,10 +67,9 @@ hr {
 .contact-form textarea {
   background: rgb(60, 60, 60);
   resize: none;
-  padding: 15px;
-  height: 175px;
-  width: 500px;
-  margin: 10px 0px;
+  height: 20vh;
+  width: 28vw;
+  margin: 1vh 2vw;
   color: white;
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 120%;
@@ -91,14 +95,14 @@ hr {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 105%;
   padding: 10px 20px;
-  width: 250px;
-  height: 50px;
+  width: 14vw;
+  height: 6vh;
   -webkit-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  margin: 10px 0px 20px 0px;
+  margin: 1vh 2vw;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
 }
@@ -124,34 +128,104 @@ span.required {
 .otherWayInfo{
   display: flex;
   color: #999999;
+  margin: 1vh 2vw;
+  font-size: 14px;
 }
 
 .address{
-  margin-left: 100px;
+  margin-left: 5%;
 }
+
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 780px){
   .page-content {
     display: block;
-    
-    height: calc(100vh - 70px);
-    width: 100vw;
-    background: #494949;
-    font-family: Helvetica;
-    -webkit-font-smoothing: antialiased;
-    color: #3c3c3c;
-    font-size: 100%;
-    margin-top: 70px;
   }
   
   #map {
     /* height: calc(100% - 70px); */
-    height: 100vh;
+    height: 70vh;
     /* flex-basis: 100%; */
     width: 100%;
   }
   
   .formWrap {
-    /* flex-basis: 28%; */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
+  .contact-form .text-input {
+    font-size: 120%;
+    width: 96vw;
+    height: 6vh;
+  }
+.contact-form textarea {
+  display: block;
+  width: 96vw;
+  font-size: 120%;
+
+}
+
+.contact-form .send {
+  font-size: 120%;
+  width: 48vw;
+}
+.otherWayInfo{
+  font-size: 14px;
+  }
+  .address {
+    margin-left: 8%;
+}
+  h1{
+    font-size: 180%;
+  }
+
+  hr{
+  width: 96vw;
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+  .otherWayInfo{
+  font-size: 12px;
+  }
+  h1{
+    font-size: 90%;
+  }
+.contact-form .text-input {
+  font-size: 90%;
+
+}
+.contact-form textarea {
+  font-size: 90%;
+
+}
+.contact-form .send {
+  font-size: 90%;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+  .otherWayInfo{
+  font-size: 14px;
+  }
+  h1{
+    font-size: 100%;
+  }
+.contact-form .text-input {
+  font-size: 100%;
+
+}
+.contact-form textarea {
+  font-size: 100%;
+
+}
+.contact-form .send {
+  font-size: 100%;
+}
+
 }
