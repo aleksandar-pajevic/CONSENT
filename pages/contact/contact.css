@@ -37,7 +37,6 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
   margin: 1vh 2vw;
-
 }
 hr {
   width: 28vw;
@@ -125,32 +124,31 @@ span.required {
   color: red;
 }
 
-.otherWayInfo{
+.otherWayInfo {
   display: flex;
   color: #999999;
   margin: 1vh 2vw;
   font-size: 14px;
 }
 
-.address{
+.address {
   margin-left: 5%;
 }
 
-
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
   .page-content {
     display: block;
   }
-  
+
   #map {
     /* height: calc(100% - 70px); */
     height: 70vh;
     /* flex-basis: 100%; */
     width: 100%;
   }
-  
+
   .formWrap {
     display: flex;
     flex-direction: column;
@@ -161,111 +159,101 @@ span.required {
     width: 96vw;
     height: 6vh;
   }
-.contact-form textarea {
-  display: block;
-  width: 96vw;
-  font-size: 120%;
+  .contact-form textarea {
+    display: block;
+    width: 96vw;
+    font-size: 120%;
+  }
 
-}
-
-.contact-form .send {
-  font-size: 120%;
-  width: 48vw;
-}
-.otherWayInfo{
-  font-size: 14px;
+  .contact-form .send {
+    font-size: 120%;
+    width: 48vw;
+  }
+  .otherWayInfo {
+    font-size: 14px;
   }
   .address {
     margin-left: 8%;
-}
-  h1{
+  }
+  h1 {
     font-size: 180%;
   }
 
-  hr{
-  width: 96vw;
+  hr {
+    width: 96vw;
   }
-
 }
 
-@media screen and (max-width: 1000px){
-  .otherWayInfo{
-  font-size: 12px;
+@media screen and (max-width: 1000px) {
+  .otherWayInfo {
+    font-size: 12px;
   }
-  h1{
+  h1 {
     font-size: 90%;
   }
-.contact-form .text-input {
-  font-size: 90%;
-
-}
-.contact-form textarea {
-  font-size: 90%;
-
-}
-.contact-form .send {
-  font-size: 90%;
-}
-
-}
-
-@media screen and (max-width: 1200px){
-  .otherWayInfo{
-  font-size: 14px;
+  .contact-form .text-input {
+    font-size: 90%;
   }
-  h1{
+  .contact-form textarea {
+    font-size: 90%;
+  }
+  .contact-form .send {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .otherWayInfo {
+    font-size: 15px;
+  }
+  h1 {
     font-size: 100%;
   }
-.contact-form .text-input {
-  font-size: 70%;
-
-}
-.contact-form textarea {
-  font-size: 70%;
-
-}
-.contact-form .send {
-  font-size: 100%;
-}
-
-}
-@media screen and (min-width: 1200px){
-  .otherWayInfo{
-  font-size: 16px;
+  .contact-form .text-input {
+    font-size: 80%;
   }
-  h1{
-    font-size: 120%;
+  .contact-form textarea {
+    font-size: 80%;
   }
-.contact-form .text-input {
-  font-size: 80%;
-
-}
-.contact-form textarea {
-  font-size: 80%;
-
-}
-.contact-form .send {
-  font-size: 100%;
-}
-
-}
-@media screen and (min-width: 1600px){
-  .otherWayInfo{
-  font-size: 20px;
+  .contact-form .send {
+    font-size: 100%;
   }
-  h1{
+}
+@media screen and (min-width: 1200px) {
+  .otherWayInfo {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  .contact-form .text-input {
+    font-size: 100%;
+  }
+  .contact-form textarea {
+    font-size: 100%;
+  }
+  .contact-form .send {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .page-content {
+    height: calc(100vh - 120px);
+    margin-top: 120px;
+  }
+  .otherWayInfo {
+    font-size: 20px;
+  }
+  h1 {
     font-size: 180%;
   }
-.contact-form .text-input {
-  font-size: 120%;
-
-}
-.contact-form textarea {
-  font-size: 120%;
-
-}
-.contact-form .send {
-  font-size: 150%;
-}
-
+  .contact-form .text-input {
+    font-size: 120%;
+  }
+  .contact-form textarea {
+    font-size: 120%;
+  }
+  .contact-form .send {
+    font-size: 150%;
+  }
 }

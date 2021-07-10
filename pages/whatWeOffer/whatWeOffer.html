@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
     <title>Consent - Professional Consulting</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,17 +19,24 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-  <link rel="stylesheet" href="../../index.css" />
-  <link rel="stylesheet" href="whatWeOffer.css" />
-  <script src="../../index.js"></script>
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="whatWeOffer.css" />
+    <script src="../../index.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="../../jquery.multiscroll.css" />
-  <script
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../jquery.multiscroll.css"
+    />
+    <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="../../jquery.multiscroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../../jquery.multiscroll.min.js"
+    ></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
@@ -47,66 +54,67 @@
         });
       });
     </script>
-</head>
-<header id="header">
-  <div class="nav">
-    <input type="checkbox" id="nav-check" />
-    <div class="nav-header">
-      <div class="nav-title">
-        <img
-          src="../../assets/pictures/CONSENTnav_logo2.png"
-          alt="nav-logo"
-        />
+  </head>
+  <header id="header">
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <img
+            src="../../assets/pictures/CONSENTnav_logo2.png"
+            alt="nav-logo"
+          />
+        </div>
       </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <ul class="nav-links" onclick="whosActive(event)">
+        <li><a href="../../index.html" id="home">Home</a></li>
+        <li>
+          <a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer"
+            >What We Offer</a
+          >
+        </li>
+        <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
+        <li>
+          <a href="/pages/contact/contact.html" id="contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <ul class="nav-links" onclick="whosActive(event)">
-      <li><a href="../../index.html" id="home">Home</a></li>
-      <li><a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer">What We Offer</a></li>
-      <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
-      <li>
-        <a href="/pages/contact/contact.html" id="contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</header>
-<body onLoad="whatWeOfferFocus()">
-  <div id="multiscroll">
-    <div class="ms-left">
-      <div class="ms-section first">
-        <div class="container">
-            
+  </header>
+  <body onLoad="whatWeOfferFocus()">
+    <div id="multiscroll">
+      <div class="ms-left">
+        <div class="ms-section first">
+          <div class="container">
             <h2 class="slideHeading">
-              Business Consulting And Project Management 
+              Business Consulting And Project Management
             </h2>
-          
+          </div>
         </div>
-      </div>
-      <div class="ms-section second">
-        <div class="container">
-            
-            <h2 class="slideHeading">
-              Adding Our Talents To Your Department
-            </h2>
-          
+        <div class="ms-section second">
+          <div class="container">
+            <!-- <h2 class="slideHeading">Adding Our Talents To Your Department</h2> -->
+            <label class="slideHeading"
+              ><input type="checkbox" />Adding Our Talents To Your Department
+              <p class="description">
+                Sed ut perspiciatis unde omnis iste natus
+              </p>
+            </label>
+            <input type="checkbox" id="switch" />
+          </div>
         </div>
-      </div>
-      <div class="ms-section third">
-        <div class="container">
-            
-            <h2 class="slideHeading">
-             Working Together With the Same Goal
-            </h2>
-          
+        <div class="ms-section third">
+          <div class="container">
+            <h2 class="slideHeading">Working Together With the Same Goal</h2>
+          </div>
         </div>
-      </div>
-      <!-- <div class="ms-section fourth">
+        <!-- <div class="ms-section fourth">
         <div class="container">
             
             <h2 class="slideHeading">
@@ -115,84 +123,69 @@
           
         </div>
       </div> -->
-    </div>
-    <div class="ms-right">
-      <div class="ms-section first">
-        <div class="container">
-          
-            
+      </div>
+      <div class="ms-right">
+        <div class="ms-section first">
+          <div class="container">
             <img
               src="../../assets/pictures/LOGO_text.png"
               alt="logo"
               class="slideLogoText"
             />
-          
-          
-            
+
             <p class="slideDescription">
-              Pragmatism and communication are essential parts of our DNA. 
-              That’s why our experts work with your teams as close to the operational realities as they can get.
+              Pragmatism and communication are essential parts of our DNA.
+              That’s why our experts work with your teams as close to the
+              operational realities as they can get.
             </p>
             <img
-            src="../../assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
-          
+              src="../../assets/pictures/LOGO_orah.png"
+              alt="logo"
+              class="slideLogoOrah"
+            />
+          </div>
         </div>
-      </div>
-      <div class="ms-section second">
-        <div class="container">
-          
-            
-
+        <div class="ms-section second">
+          <div class="container">
             <img
               src="../../assets/pictures/LOGO_text.png"
               alt="logo"
               class="slideLogoText"
             />
-          
-          
-            
 
-            <p class="slideDescription">
-              Performance management, operational support and finance solutions: 
-              our services cover most of the issues that can come up within finance departments.
-            </p>
+            <!-- <p for="switch" id="two" class="slideDescription">
+              Performance management, operational support and finance solutions:
+              our services cover most of the issues that can come up within
+              finance departments.
+            </p> -->
             <img
-            src="../../assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
-          
+              src="../../assets/pictures/LOGO_orah.png"
+              alt="logo"
+              class="slideLogoOrah"
+            />
+          </div>
         </div>
-      </div>
-      <div class="ms-section third">
-        <div class="container">
-          
-            
-
+        <div class="ms-section third">
+          <div class="container">
             <img
               src="../../assets/pictures/LOGO_text.png"
               alt="logo"
               class="slideLogoText"
             />
-          
-          
-            
 
             <p class="slideDescription">
-              We’re looking for enthusiastic, motivated candidates who want to focus on client success and want to be part of a dynamic and ambitious firm that promises plenty of adventure.
+              We’re looking for enthusiastic, motivated candidates who want to
+              focus on client success and want to be part of a dynamic and
+              ambitious firm that promises plenty of adventure.
             </p>
             <img
-            src="../../assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
-          
+              src="../../assets/pictures/LOGO_orah.png"
+              alt="logo"
+              class="slideLogoOrah"
+            />
+          </div>
         </div>
-      </div>
-      <!-- <div class="ms-section fourth">
+        <!-- <div class="ms-section fourth">
         <div class="container">
           
             
@@ -215,7 +208,7 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

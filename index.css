@@ -57,7 +57,6 @@ body {
   padding: 0;
 }
 
-
 .nav > .nav-links > li > a {
   /* display: inline-block; */
   /* padding: 13px 10px 13px 10px; */
@@ -265,13 +264,11 @@ body {
 .right3-2 {
   /* background-color: #342836; */
   background-color: #6f522e;
-
 }
 .left3-2,
 .right3-1 {
   /* background-color: #6f726e; */
   background-color: #1c2629;
-
 }
 
 .slideHeading,
@@ -296,7 +293,7 @@ body {
   top: 5%;
   right: 0%;
 }
-.slideLogoOrah{
+.slideLogoOrah {
   position: absolute;
   bottom: 20%;
   right: 3%;
@@ -329,18 +326,20 @@ body {
   outline: 0;
 }
 
-
-@media screen and (min-width: 1600px){
-.nav > .nav-links {
-  font-size: 25px;
-}
-#header {
-height: 120px;
-}
-.ms-left {
-  top: 120px !important;
-}
-.ms-right {
-  top: 120px !important;
-}
+@media screen and (min-width: 2200px) {
+  .nav > .nav-links {
+    transform: scale(1.5);
+  }
+  #header {
+    height: 120px;
+  }
+  .ms-left {
+    top: 120px !important;
+  }
+  .ms-right {
+    top: 120px !important;
+  }
+  .nav-title {
+    transform: scale(1.5);
+  }
 }
