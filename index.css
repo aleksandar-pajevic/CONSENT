@@ -343,3 +343,14 @@ body {
     transform: scale(1.5);
   }
 }
+
+@media screen and (min-width: 240px) {
+  .nav-title {
+    transform: scale(0.7);
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav-title {
+    transform: scale(1);
+  }
+}

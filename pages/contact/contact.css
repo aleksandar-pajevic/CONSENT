@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #4d4d4d;
+  background: #494949;
 }
 .page-content {
   display: flex;
@@ -15,6 +15,7 @@ body {
   color: #3c3c3c;
   font-size: 100%;
   margin-top: 70px;
+  overflow-x: hidden;
 }
 
 #map {
@@ -88,14 +89,17 @@ hr {
 }
 
 .contact-form .send {
+  display: table-cell;
+  vertical-align: middle;
   border: none;
   background-color: #e5a459;
   color: rgb(54, 54, 54);
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 105%;
-  padding: 10px 20px;
   width: 14vw;
   height: 6vh;
+  padding: 0;
+  margin: 0 auto;
   -webkit-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -156,12 +160,12 @@ span.required {
   }
   .contact-form .text-input {
     font-size: 120%;
-    width: 96vw;
+    width: 92vw;
     height: 6vh;
   }
   .contact-form textarea {
     display: block;
-    width: 96vw;
+    width: 92vw;
     font-size: 120%;
   }
 
@@ -180,7 +184,7 @@ span.required {
   }
 
   hr {
-    width: 96vw;
+    width: 92vw;
   }
 }
 
@@ -204,7 +208,7 @@ span.required {
 
 @media screen and (max-width: 1200px) {
   .otherWayInfo {
-    font-size: 15px;
+    font-size: 12px;
   }
   h1 {
     font-size: 100%;
@@ -236,7 +240,7 @@ span.required {
     font-size: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2400px) {
   .page-content {
     height: calc(100vh - 120px);
     margin-top: 120px;
