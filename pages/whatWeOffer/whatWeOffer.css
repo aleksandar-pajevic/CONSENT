@@ -13,15 +13,16 @@
   background-size: cover;
   background-position: right;
 }
+
+.ms-left .zero {
+  background-image: linear-gradient(#e5a459b6, #000000e7),
+    url(../../assets/pictures/slides/whatWeOffer/move1.jpg);
+}
 .ms-left .first {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/bulb/image_part_001.jpg);
+  background-image: linear-gradient(#e5a459b6, #000000e7),
+    url(../../assets/pictures/slides/whatWeOffer/move1.jpg);
 }
-.ms-left .second {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/business/image_part_001.jpg);
-}
-.ms-left .third {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/dueDiligence/image_part_001.jpg);
-}
+
 .ms-right {
   width: calc(50% + 1px);
   /* height: calc(100% - 70px) !important; */
@@ -33,14 +34,13 @@
   background-size: cover;
   background-position: left;
 }
+.ms-right .zero {
+  background-image: linear-gradient(#e5a459b6, #000000e7),
+    url(../../assets/pictures/slides/whatWeOffer/move2.jpg);
+}
 .ms-right .first {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/bulb/image_part_002.jpg);
-}
-.ms-right .second {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/business/image_part_002.jpg);
-}
-.ms-right .third {
-  background-image: url(../../assets/pictures/slides/whatWeOffer/dueDiligence/image_part_002.jpg);
+  background-image: linear-gradient(#e5a459b6, #000000e7),
+    url(../../assets/pictures/slides/whatWeOffer/move2.jpg);
 }
 
 .description {

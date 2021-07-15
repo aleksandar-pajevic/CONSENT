@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
     <title>Consent - Professional Consulting</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,39 +19,61 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-  <link rel="stylesheet" href="/index.css" />
-  <script src="../../index.js"></script>
-
-
-</head>
-<header id="header">
-  <div class="nav">
-    <input type="checkbox" id="nav-check" />
-    <div class="nav-header">
-      <div class="nav-title">
-        <img
-          src="../../assets/pictures/CONSENTnav_logo2.png"
-          alt="nav-logo"
-        />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/pages/ourTeam/ourTeam.css" />
+    <script src="../../index.js"></script>
+    <script src="/pages/ourTeam/ourTeam.js"></script>
+  </head>
+  <header id="header">
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <img
+            src="../../assets/pictures/CONSENTnav_logo2.png"
+            alt="nav-logo"
+          />
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <ul class="nav-links" onclick="whosActive(event)">
+        <li><a href="../../index.html" id="home">Home</a></li>
+        <li>
+          <a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer"
+            >What We Offer</a
+          >
+        </li>
+        <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
+        <li>
+          <a href="/pages/contact/contact.html" id="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body onLoad="ourTeamFocus()">
+    <div class="container">
+      <div class="card">
+        <div class="cell first-f front">one front</div>
+        <div class="cell first back">one back</div>
+      </div>
+      <div class="card">
+        <div class="cell second-f front">two front</div>
+        <div class="cell second back">two back</div>
+      </div>
+      <div class="card">
+        <div class="cell third-f front">three front</div>
+        <div class="cell third back">three back</div>
+      </div>
+      <div class="card">
+        <div class="cell fourth-f front">four front</div>
+        <div class="cell fourth back">four back</div>
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <ul class="nav-links" onclick="whosActive(event)">
-      <li><a href="../../index.html" id="home">Home</a></li>
-      <li><a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer">What We Offer</a></li>
-      <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
-      <li>
-        <a href="/pages/contact/contact.html" id="contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</header>
-<body onLoad="ourTeamFocus()">
-</body>
+  </body>
 </html>
