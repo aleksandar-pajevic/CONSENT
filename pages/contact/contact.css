@@ -138,6 +138,9 @@ span.required {
 .address {
   margin-left: 5%;
 }
+#header {
+  z-index: 1001;
+}
 
 /* MEDIA QUERIES */
 

@@ -351,8 +351,110 @@ body {
     transform: scale(0.7);
   }
 }
+@media screen and (min-width: 320px) {
+  .nav-title {
+    transform: scale(1);
+  }
+  .slideHeading {
+    font-size: 19px;
+  }
+  .slideDescription {
+    font-size: 13px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(0.7);
+  }
+  .slideButton:hover {
+    transform: scale(0.9);
+  }
+}
 @media screen and (min-width: 480px) {
   .nav-title {
     transform: scale(1);
+  }
+  .slideDescription {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .slideHeading {
+    font-size: 22px;
+  }
+  .slideDescription {
+    font-size: 16px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(0.7);
+  }
+  .slideButton:hover {
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 768px) {
+  .slideHeading {
+    font-size: 24px;
+  }
+  .slideDescription {
+    font-size: 18px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(0.8);
+  }
+  .slideButton:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 992px) {
+  .slideHeading {
+    font-size: 26px;
+  }
+  .slideDescription {
+    font-size: 18px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(0.9);
+  }
+  .slideButton:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slideHeading {
+    font-size: 30px;
+  }
+  .slideDescription {
+    font-size: 20px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(1);
+  }
+  .slideButton:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .slideHeading {
+    font-size: 35px;
+  }
+  .slideDescription {
+    font-size: 25px;
+  }
+
+  .slideButton,
+  .slideLogoOrah {
+    transform: scale(1.1);
+  }
+  .slideButton:hover {
+    transform: scale(1.3);
   }
 }
