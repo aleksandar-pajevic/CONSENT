@@ -77,7 +77,7 @@
   background-color: black;
 }
 .second-half {
-  background-image: linear-gradient(#e5a45970, #000000e7),
+  background-image: linear-gradient(to left, #e5a45967, #000000),
     url(/assets/pictures/slides/whatWeOffer/move2.jpg);
   background-size: cover;
   background-position: center;
@@ -124,5 +124,11 @@ p {
   }
   .slideButton:hover {
     transform: scale(1.2);
+  }
+  .second-half {
+    background-image: linear-gradient(#e5a45982, #000000),
+      url(/assets/pictures/slides/whatWeOffer/move2.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }

@@ -19,13 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-    <link
-      rel="stylesheet"
-      href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"
-    />
-    <script src="leaflet-tilelayer-colorfilter.min.js"></script>
-
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="contact.css" />
     <script src="../../index.js"></script>
@@ -52,7 +45,11 @@
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
         <li><a href="../../index.html" id="home">Home</a></li>
-        <li><a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer">What We Offer</a></li>
+        <li>
+          <a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer"
+            >What We Offer</a
+          >
+        </li>
         <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
         <li>
           <a href="/pages/contact/contact.html" id="contact">Contact</a>
@@ -63,7 +60,14 @@
 
   <body onLoad="contactFocus()">
     <div class="page-content">
-      <div id="map"></div>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.735967294396!2d20.423295715946832!3d44.806569279098596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6ff40b151cd9%3A0x2f3b492686a9de62!2sBulevar%20Milutina%20Milankovi%C4%87a%2028%2C%20Beograd%2011070!5e0!3m2!1sen!2srs!4v1627675311009!5m2!1sen!2srs"
+          style="border: 0; filter: invert(90%); width: 100%; height: inherit"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
       <div class="formWrap">
         <h1>connect</h1>
         <hr />
@@ -87,62 +91,37 @@
             placeholder="Email"
             required
           /><br />
-          <input type="text" class="text-input" placeholder="Subject" required/>
+          <input
+            type="text"
+            class="text-input"
+            placeholder="Subject"
+            required
+          />
           <!-- <label for="message"
             >Your Message: <span class="required">*</span></label
           > -->
-          <textarea name="message" placeholder="Message" required></textarea><br />
+          <textarea name="message" placeholder="Message" required></textarea
+          ><br />
           <input type="submit" value="Send" class="send" />
         </form>
         <hr />
         <h1>Other way</h1>
         <div class="otherWayInfo">
-       <p> <span class="contact-mail">office@consent.team</span> <br />
-        <span class="contact-phone">(+381) 11 713 07 88 <br> (+381) 63 44 00 04 </span></p>
-        <p class="address"><span>Milutina Milankovića 28 <br>
-          11070 Beograd</span></p>
-      </div>
+          <p>
+            <span class="contact-mail">office@consent.team</span> <br />
+            <span class="contact-phone"
+              >(+381) 11 713 07 88 <br />
+              (+381) 63 44 00 04
+            </span>
+          </p>
+          <p class="address">
+            <span
+              >Milutina Milankovića 28 <br />
+              11070 Beograd</span
+            >
+          </p>
+        </div>
       </div>
     </div>
-    <script>
-      // initialize Leaflet
-      var map = L.map('map').setView({ lat: 44.80621, lon: 20.42569 }, 15);
-
-      let myFilter = ['grayscale:100%', 'invert:100%'];
-
-      // add the OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
-      }).addTo(map);
-      // let myFilter = [
-      //   'blur:0px',
-      //   'brightness:95%',
-      //   'contrast:130%',
-      //   'grayscale:20%',
-      //   'hue:290deg',
-      //   'opacity:100%',
-      //   'invert:100%',
-      //   'saturate:300%',
-      //   'sepia:10%',
-      // ];
-
-      // let myTileLayer = L.tileLayer
-      //   .colorFilter('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
-      //     attribution:
-      //       '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
-      //     filter: myFilter,
-      //   })
-      //   .addTo(map);
-
-      // show the scale bar on the lower left corner
-      L.control.scale().addTo(map);
-
-      // show a marker on the map
-      L.marker({ lat: 44.80621, lon: 20.42569 })
-        .bindPopup('The center of the world')
-        .addTo(map);
-    </script>
   </body>
 </html>
