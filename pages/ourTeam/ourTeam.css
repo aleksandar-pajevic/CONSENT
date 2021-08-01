@@ -109,10 +109,12 @@ p {
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: row-reverse;
+    height: max-content;
   }
   .first-half {
     width: 100%;
     order: 1;
+    padding-bottom: 15%;
   }
   .second-half {
     width: 100%;
@@ -130,5 +132,8 @@ p {
       url(/assets/pictures/slides/whatWeOffer/move2.jpg);
     background-size: cover;
     background-position: center;
+  }
+  h4 {
+    padding: 6% 0px;
   }
 }
