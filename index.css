@@ -114,7 +114,7 @@ body {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 45px;
+    top: 40px;
     left: 0px;
   }
   .nav > .nav-links > li > a {
