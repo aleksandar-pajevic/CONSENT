@@ -140,7 +140,7 @@ p {
   }
   .second-half {
     background-image: linear-gradient(#e5a45982, #000000),
-      url(/assets/pictures/slides/whatWeOffer/move2.jpg);
+      url(../../assets/pictures/ourTeam/move.jpg);
     background-size: cover;
     background-position: center;
   }
