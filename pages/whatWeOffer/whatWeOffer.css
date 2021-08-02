@@ -84,4 +84,7 @@ h4{
   width: 65%;
     height: 70%;
 }
+.container{
+  overflow-y: scroll;
+}
 }
