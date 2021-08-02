@@ -38,18 +38,9 @@ h1 {
 
 
 }
-/* .card:before{
-  display: inline-block;
-  position: absolute;
-  width: 24%;
-  height: 38%;
-  content: "";
-  background: inherit;
-  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
-  filter: blur(10px);
-} */
 .card:hover {
   transform: scale(1.01);
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.35);
   /* box-shadow: 2px 4px 8px 2px rgba(255, 255, 255, 0.25); */
   /* border: 2px solid whitesmoke; */
 } 
@@ -71,10 +62,11 @@ h4{
   margin-bottom: 20px;
 }
 .title {
-  color: whitesmoke;
+  color: #342836;
   text-align: center;
   font-size: 200%;
   padding: 5%;
+  text-transform: capitalize;
 }
 .description {
   color: whitesmoke;
