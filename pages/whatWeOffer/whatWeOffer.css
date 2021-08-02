@@ -73,3 +73,15 @@ h4{
   padding: 5%;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+.cardsWrap{
+  flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.card{
+  margin-bottom: 40px;
+  width: 65%;
+    height: 70%;
+}
+}
