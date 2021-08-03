@@ -1,16 +1,18 @@
+body {
+  position: relative;
+}
 .container {
   margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100vw;
-  height: calc(100vh - 71px);
+  min-height: calc(100vh - 70px);
   background-color: #494949;
 }
 .first-half,
 .second-half {
   width: 50%;
-  height: 100%;
 }
 .first-half {
   display: flex;
@@ -21,9 +23,10 @@
 }
 .second-half {
   background-image: linear-gradient(to left, #e5a45967, #000000),
-    url(/assets/pictures/slides/whatWeOffer/move2.jpg);
+    url(../../assets/pictures/ourTeam/move.jpg);
   background-size: cover;
   background-position: center;
+  /* min-height: calc(100vh - 70px); */
 }
 h1 {
   margin-top: 8%;
@@ -49,34 +52,37 @@ p {
   z-index: 1;
 }
 .slideLogoOrah {
-  bottom: 2.3%;
-  right: 1.5%;
+  bottom: 1%;
+  right: 2%;
   z-index: 1;
 }
 .slideLogoText {
-  top: 10.2%;
+  top: 1%;
+  right: 2%;
   z-index: 1;
+}
+@media screen and (min-width: 769px) {
+  .slideLogoOrah {
+    bottom: 1%;
+    right: 1%;
+  }
+  .slideLogoText {
+    top: 1%;
+    right: 1%;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: row-reverse;
-    height: max-content;
   }
   .first-half {
     width: 100%;
     order: 1;
-    padding-bottom: 15%;
-    top: 50.5%;
-    position: absolute;
-    height: fit-content;
+    padding-bottom: 5%;
   }
   .second-half {
     width: 100%;
     height: 40vh;
-    order: 0;
-  }
-  .slideButton {
-    transform: scale(1);
   }
   .slideButton:hover {
     transform: scale(1.2);
@@ -90,11 +96,15 @@ p {
   h4 {
     padding: 6% 0px;
   }
-  .slideLogoOrah {
-    bottom: -69%;
-    right: 2%;
+}
+
+@media screen and (max-width: 450px) {
+  .second-half {
+    width: 100%;
+    height: 50vh;
+    order: 0;
   }
-  .slideLogoText {
-    right: 0%;
+  .first-half {
+    padding-bottom: 15%;
   }
 }
