@@ -8,6 +8,7 @@ body {
   flex-direction: row;
   width: 100vw;
   min-height: calc(100vh - 70px);
+  height: auto;
   background-color: #494949;
 }
 .first-half,
@@ -106,5 +107,19 @@ p {
   }
   .first-half {
     padding-bottom: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slideLogoOrah {
+    transform: scale(1);
+    bottom: 2%;
+    right: 0.5%;
+  }
+  .slideLogoText {
+    top: 2%;
+    right: 1%;
+  }
+  .slideButton:hover {
+    transform: scale(1.2);
   }
 }
