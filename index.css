@@ -223,7 +223,7 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
   font-weight: 400;
   max-width: 54%;
-  color: #f3f3f3;
+  color: #f3f3f3e0;
   font-weight: 400;
   text-shadow: black 0px 0px 12px;
 }
@@ -280,7 +280,7 @@ body {
   font-weight: 400;
   font-style: italic;
   position: absolute;
-  color: #f3f3f3;
+  color: #f3f3f3e0;
   text-shadow: #000000 0px 0px 15px;
 }
 
