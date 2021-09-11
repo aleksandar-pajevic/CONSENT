@@ -220,10 +220,10 @@ body {
   text-align: center;
 }
 .slideDescription {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-weight: 400;
   max-width: 54%;
-  color: black;
+  color: #f3f3f3;
   font-weight: 400;
   text-shadow: black 0px 0px 12px;
 }
@@ -238,11 +238,6 @@ body {
   height: 100%;
   opacity: 0.5;
   transition: all 0.2s ease-in-out;
-}
-
-.leftFirstOverlay:hover,
-.rightSecondOverlay:hover {
-  opacity: 0.8;
 }
 
 .left1-1,
@@ -280,12 +275,12 @@ body {
   z-index: 10;
 }
 .slideHeading {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 37px;
   font-weight: 400;
   font-style: italic;
   position: absolute;
-  color: #131313;
+  color: #f3f3f3;
   text-shadow: #000000 0px 0px 15px;
 }
 

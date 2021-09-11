@@ -21,3 +21,18 @@ function ourTeamFocus() {
 function contactFocus() {
   document.getElementById('contact').classList.add('activeNav');
 }
+
+function opacityInc(overlay) {
+  let overlays = document.getElementsByClassName(overlay);
+
+  for (var i = 0; i < overlays.length; i++) {
+    overlays[i].style.opacity = '0.8';
+  }
+}
+function opacityDec(overlay) {
+  let overlays = document.getElementsByClassName(overlay);
+
+  for (var i = 0; i < overlays.length; i++) {
+    overlays[i].style.opacity = '0.5';
+  }
+}
