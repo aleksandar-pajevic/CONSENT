@@ -96,12 +96,68 @@ ul li {
 .readMore:hover {
   transform: skew(15deg);
 }
+/* MODAL */
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 98%;
+  min-height: calc(100% - 70px);
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.modalDialog h2 {
+  text-align: center;
+}
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #e5a459;
+}
 
 /* mediaqueries */
 
 @media screen and (min-width: 250px) {
   .container {
-    overflow-y: scroll;
     margin-top: 70px;
   }
   .cardsWrap {
@@ -146,8 +202,8 @@ ul li {
     margin: 0;
   }
   .slideLogoOrah {
-    bottom: 1%;
-    right: 1%;
+    bottom: 2%;
+    right: 0.5%;
   }
   .card {
     width: 23%;
