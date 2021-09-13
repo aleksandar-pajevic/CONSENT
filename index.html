@@ -45,7 +45,9 @@
         });
       });
     </script>
+
     <script src="index.js"></script>
+    <script src="languages.js"></script>
   </head>
 
   <header id="header">
@@ -64,15 +66,35 @@
         </label>
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
-        <li><a href="/index.html" id="home">Home</a></li>
+        <li><a href="/index.html" id="home" data-key="navHome">Home</a></li>
         <li>
-          <a href="/pages/whatWeOffer/whatWeOffer.html" id="whatWeOffer"
+          <a
+            href="/pages/whatWeOffer/whatWeOffer.html"
+            id="whatWeOffer"
+            data-key="navOffer"
             >What We Offer</a
           >
         </li>
-        <li><a href="/pages/ourTeam/ourTeam.html" id="ourTeam">Our Team</a></li>
         <li>
-          <a href="/pages/contact/contact.html" id="contact">Contact</a>
+          <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
+            >Our Team</a
+          >
+        </li>
+        <li>
+          <a
+            href="/pages/contact/contact.html"
+            id="contact"
+            data-key="navContact"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <select id="language" onchange="applyStrings()">
+            <option value="en">English</option>
+            <option value="sr">Serbian</option>
+            <option value="ru">Russian</option>
+            <option value="it">Italian</option>
+          </select>
         </li>
       </ul>
     </div>
@@ -275,6 +297,5 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./languages.js"></script>
   </body>
 </html>
