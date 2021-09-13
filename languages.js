@@ -2,7 +2,7 @@
 
 let data = {
   languages: {
-    en: {
+    gb: {
       strings: {
         navHome: 'Home',
         navOffer: 'What We Offer',
@@ -22,7 +22,7 @@ let data = {
           'We’re looking for enthusiastic, motivated candidates who want to focus on client success and want to be part of a dynamic and ambitious firm that promises plenty of adventure.',
       },
     },
-    sr: {
+    rs: {
       strings: {
         navHome: 'Početna',
         navOffer: 'Šta Nudimo',
@@ -54,7 +54,16 @@ let data = {
 function applyStrings() {
   let select = document.getElementById('language');
   let language = select.options[select.selectedIndex].value;
-  console.log('language', language);
+  // console.log('language', language);
+
+  let flag = document.getElementById('flag');
+  let oldFlagClass = flag.classList.value.toString().split(' ');
+  // console.log('oldFlagClass', oldFlagClass);
+
+  flag.classList.remove(oldFlagClass[1]);
+  let newFlag = flag.classList.add(`flag-icon-${language}`);
+  // console.log('newFlag', newFlag);
+
   document.querySelectorAll('[data-key]').forEach((element) => {
     // console.log('element', element);
     let key = element.getAttribute('data-key');

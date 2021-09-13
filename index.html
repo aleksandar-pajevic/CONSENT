@@ -21,7 +21,10 @@
     />
     <link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-
+    <link
+      rel="stylesheet"
+      href="/node_modules/flag-icon-css/css/flag-icon.min.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -88,15 +91,17 @@
             >Contact</a
           >
         </li>
-        <li>
-          <select id="language" onchange="applyStrings()">
-            <option value="en">English</option>
-            <option value="sr">Serbian</option>
-            <option value="ru">Russian</option>
-            <option value="it">Italian</option>
-          </select>
-        </li>
       </ul>
+      <div class="custom-select">
+        <span id="flag" class="flag-icon flag-icon-gb"></span>
+        <select id="language" onchange="applyStrings()">
+          <option value="gb" selected>English</option>
+          <option value="rs">Serbian</option>
+          <option value="ru">Russian</option>
+
+          <option value="it">Italian</option>
+        </select>
+      </div>
     </div>
   </header>
   <body onLoad="homeFocus()">

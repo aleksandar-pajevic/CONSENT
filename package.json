@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flag-icon-css": "^3.5.0",
     "leaflet.tilelayer.colorfilter": "^1.2.5",
     "multiscroll.js": "^0.2.3"
   }
