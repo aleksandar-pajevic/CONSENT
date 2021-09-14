@@ -101,6 +101,30 @@ select:focus {
   outline: none;
 }
 
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  height: 15px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+.flag-icon-rs {
+  background-image: url(/assets/pictures/rs.svg);
+}
+.flag-icon-ru {
+  background-image: url(/assets/pictures/ru.svg);
+}
+.flag-icon-gb {
+  background-image: url(/assets/pictures/gb.svg);
+}
+.flag-icon-it {
+  background-image: url(/assets/pictures/it.svg);
+}
 /*responsive nav*/
 
 @media (max-width: 623px) {
@@ -416,6 +440,12 @@ select:focus {
   .nav > .nav-links {
     font-size: 12px;
   }
+  .flag-icon {
+    height: 12px;
+  }
+  select {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 768px) {
   .slideHeading {
@@ -438,6 +468,11 @@ select:focus {
   .nav > .nav-links {
     font-size: 15px;
   }
+  .flag-icon {
+    height: 15px;
+  }
+  select {
+    font-size: 15px
 }
 @media screen and (min-width: 992px) {
   .slideHeading {
