@@ -94,8 +94,8 @@
       </ul>
       <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
-        <select id="language" onchange="applyStrings()">
-          <option value="gb" selected>English</option>
+        <select id="language" onchange="changeLanguage()">
+          <option value="gb">English</option>
           <option value="rs">Serbian</option>
           <option value="ru">Russian</option>
 
@@ -104,7 +104,7 @@
       </div>
     </div>
   </header>
-  <body onLoad="homeFocus()">
+  <body onLoad="homeFocus(), onLoadLanguage() ">
     <div id="multiscroll">
       <div class="ms-left">
         <div class="ms-section first">

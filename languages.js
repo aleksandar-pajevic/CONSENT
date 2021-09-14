@@ -20,6 +20,11 @@ let data = {
         slideBtnThird: 'Join Our Team',
         slideDescriptionThird:
           'We’re looking for enthusiastic, motivated candidates who want to focus on client success and want to be part of a dynamic and ambitious firm that promises plenty of adventure.',
+        wwoMainHeading: 'our area of expertise',
+        ourTeamHeading: 'who we are',
+        contactHeadingOne: 'connect',
+        contactHeadingTwo: 'Get in contact',
+        contactHeadingThree: 'Other way',
       },
     },
     rs: {
@@ -40,6 +45,11 @@ let data = {
         slideBtnThird: 'Pridruži Nam Se',
         slideDescriptionThird:
           'Tražimo entuzijastične, motivisane kandidate koji se žele fokusirati na uspeh klijenata i žele da budu deo dinamične i ambiciozne firme koja obećava puno avanture.',
+        wwoMainHeading: 'Naša polja ekspertize',
+        ourTeamHeading: 'Ko smo mi',
+        contactHeadingOne: 'Povežite se',
+        contactHeadingTwo: 'Stupite u kontakt',
+        contactHeadingThree: 'Drugi način',
       },
     },
     it: {
@@ -51,25 +61,62 @@ let data = {
   },
 };
 
-function applyStrings() {
-  let select = document.getElementById('language');
-  let language = select.options[select.selectedIndex].value;
-  // console.log('language', language);
+function setLocStorLang(string) {
+  localStorage.setItem('selectedLanguage', string);
+}
 
+function changeFlag(selectedLang) {
   let flag = document.getElementById('flag');
   let oldFlagClass = flag.classList.value.toString().split(' ');
   // console.log('oldFlagClass', oldFlagClass);
-
   flag.classList.remove(oldFlagClass[1]);
-  let newFlag = flag.classList.add(`flag-icon-${language}`);
+  let newFlag = flag.classList.add(`flag-icon-${selectedLang}`);
   // console.log('newFlag', newFlag);
+}
 
-  document.querySelectorAll('[data-key]').forEach((element) => {
-    // console.log('element', element);
-    let key = element.getAttribute('data-key');
-    // console.log('key', key);
-    if (key) {
-      element.textContent = data.languages[`${language}`].strings[key];
-    }
-  });
+function changeLanguage() {
+  // console.log('local storage on load', localStorage);
+  if (localStorage.length <= 0) {
+    setLocStorLang('gb');
+  } else {
+    let select = document.getElementById('language');
+    let language = select.options[select.selectedIndex].value;
+    setLocStorLang(language);
+    let selectedLang = localStorage.getItem('selectedLanguage');
+    // console.log('locale storage', typeof selectedLang);
+
+    changeFlag(selectedLang);
+
+    document.querySelectorAll('[data-key]').forEach((element) => {
+      // console.log('element', element);
+      let key = element.getAttribute('data-key');
+      // console.log('key', key);
+      if (key) {
+        element.textContent = data.languages[`${selectedLang}`].strings[key];
+      }
+    });
+  }
+}
+
+function onLoadLanguage() {
+  // console.log('local storage on load', localStorage);
+  if (localStorage.length <= 0) {
+    setLocStorLang('gb');
+  } else {
+    let selectedLang = localStorage.getItem('selectedLanguage');
+    // console.log('locale storage', typeof selectedLang);
+
+    changeFlag(selectedLang);
+    document
+      .querySelectorAll(`[value=${selectedLang}]`)[0]
+      .setAttribute('selected', '');
+    document.querySelectorAll('[data-key]').forEach((element) => {
+      // console.log('element', element);
+      let key = element.getAttribute('data-key');
+      // console.log('key', key);
+      if (key) {
+        element.textContent = data.languages[`${selectedLang}`].strings[key];
+      }
+    });
+  }
 }

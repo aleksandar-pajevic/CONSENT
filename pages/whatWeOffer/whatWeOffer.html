@@ -21,6 +21,10 @@
     />
     <link rel="stylesheet" href="../../index.css" />
     <link rel="stylesheet" href="whatWeOffer.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/flag-icon-css/css/flag-icon.min.css"
+    />
     <script src="../../index.js"></script>
     <script src="../../languages.js"></script>
   </head>
@@ -66,19 +70,21 @@
           >
         </li>
       </ul>
-      <div class="dropdown dropdown-dark">
-        <select id="language" class="dropdown-select" onchange="applyStrings()">
-          <option value="en">English</option>
-          <option value="sr">Serbian</option>
+      <div class="custom-select">
+        <span id="flag" class="flag-icon flag-icon-gb"></span>
+
+        <select id="language" onchange="changeLanguage()">
+          <option value="gb">English</option>
+          <option value="rs">Serbian</option>
           <option value="ru">Russian</option>
           <option value="it">Italian</option>
         </select>
       </div>
     </div>
   </header>
-  <body onLoad="whatWeOfferFocus()">
+  <body onLoad="whatWeOfferFocus(), onLoadLanguage()">
     <div class="container">
-      <h1>our area of expertise</h1>
+      <h1 data-key="wwoMainHeading">our area of expertise</h1>
       <div class="cardsWrap">
         <div class="card">
           <div class="title">Investicioni konsalting</div>
@@ -343,7 +349,10 @@
         </div>
       </div>
       <h4>reach the top with us</h4>
-      <a href="/pages/contact/contact.html" class="slideButton"
+      <a
+        href="/pages/contact/contact.html"
+        class="slideButton"
+        data-key="slideBtnThird"
         >Join Our Team</a
       >
     </div>

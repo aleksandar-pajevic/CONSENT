@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onload="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="/index.css" />
 
     <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/flag-icon-css/css/flag-icon.min.css"
+    />
     <script src="../../index.js"></script>
     <script src="contact.js"></script>
     <script src="../../languages.js"></script>
@@ -70,9 +74,11 @@
         </li>
       </ul>
       <div class="custom-select">
-        <select id="language" onchange="applyStrings()">
-          <option value="en">English</option>
-          <option value="sr">Serbian</option>
+        <span id="flag" class="flag-icon flag-icon-gb"></span>
+
+        <select id="language" onchange="changeLanguage()">
+          <option value="gb">English</option>
+          <option value="rs">Serbian</option>
           <option value="ru">Russian</option>
           <option value="it">Italian</option>
         </select>
@@ -80,7 +86,7 @@
     </div>
   </header>
 
-  <body onLoad="contactFocus()">
+  <body onLoad="contactFocus(), onLoadLanguage()">
     <div class="page-content">
       <div id="map">
         <iframe
@@ -96,9 +102,9 @@
         ></iframe>
       </div>
       <div class="formWrap">
-        <h1>connect</h1>
+        <h1 data-key="contactHeadingOne">connect</h1>
         <hr />
-        <h1>Get in contact</h1>
+        <h1 data-key="contactHeadingTwo">Get in contact</h1>
         <form class="contact-form">
           <!-- <label for="name">Your Name: <span class="required">*</span></label> -->
           <input
@@ -132,7 +138,7 @@
           <input type="submit" value="Send" class="send" />
         </form>
         <hr />
-        <h1>Other way</h1>
+        <h1 data-key="contactHeadingThree">Other way</h1>
         <div class="otherWayInfo">
           <p>
             <span class="contact-mail">office@consent.team</span> <br />

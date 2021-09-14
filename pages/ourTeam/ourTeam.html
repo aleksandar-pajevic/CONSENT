@@ -21,6 +21,10 @@
     />
     <link rel="stylesheet" href="../../index.css" />
     <link rel="stylesheet" href="/pages/ourTeam/ourTeam.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/flag-icon-css/css/flag-icon.min.css"
+    />
     <script src="../../index.js"></script>
     <script src="../../languages.js"></script>
     <script src="/pages/ourTeam/ourTeam.js"></script>
@@ -67,20 +71,22 @@
           >
         </li>
       </ul>
-      <div class="dropdown dropdown-dark">
-        <select id="language" class="dropdown-select" onchange="applyStrings()">
-          <option value="en">English</option>
-          <option value="sr">Serbian</option>
+      <div class="custom-select">
+        <span id="flag" class="flag-icon flag-icon-gb"></span>
+
+        <select id="language" onchange="changeLanguage()">
+          <option value="gb">English</option>
+          <option value="rs">Serbian</option>
           <option value="ru">Russian</option>
           <option value="it">Italian</option>
         </select>
       </div>
     </div>
   </header>
-  <body onLoad="ourTeamFocus()">
+  <body onLoad="ourTeamFocus(), onLoadLanguage()">
     <div class="container">
       <div class="first-half">
-        <h1>who we are</h1>
+        <h1 data-key="ourTeamHeading">who we are</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
           optio ut, dolorem expedita architecto quos earum rerum non placeat
@@ -94,7 +100,10 @@
           quas cumque.
         </p>
         <h4>make the right move, chose us</h4>
-        <a href="/pages/contact/contact.html" class="slideButton"
+        <a
+          href="/pages/contact/contact.html"
+          class="slideButton"
+          data-key="slideBtnThird"
           >Join Our Team</a
         >
       </div>
