@@ -110,7 +110,8 @@ hr {
   -webkit-font-smoothing: antialiased;
 }
 
-.contact-form .send:hover {
+.contact-form .send:hover,
+.send:focus {
   background-color: rgb(36, 36, 36);
   color: whitesmoke;
 }

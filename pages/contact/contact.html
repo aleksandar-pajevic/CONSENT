@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onload="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,6 @@
 
     <link rel="stylesheet" href="contact.css" />
     <script src="../../index.js"></script>
-    <script src="contact.js"></script>
     <script src="../../languages.js"></script>
   </head>
 
@@ -101,8 +100,18 @@
         <h1 data-key="contactHeadingOne">connect</h1>
         <hr />
         <h1 data-key="contactHeadingTwo">Get in contact</h1>
-        <form class="contact-form">
+        <form
+          id="contactForm"
+          class="contact-form"
+          action="https://api.staticforms.xyz/submit"
+          method="post"
+        >
           <!-- <label for="name">Your Name: <span class="required">*</span></label> -->
+          <input
+            type="hidden"
+            name="accessKey"
+            value="51bf3312-1d5a-44c4-bd9d-969c16494af3"
+          />
           <input
             type="text"
             class="text-input"
@@ -114,7 +123,7 @@
           >Your Email Adress: <span class="required">*</span></label
         > -->
           <input
-            type="text"
+            type="email"
             class="text-input"
             name="email"
             placeholder="Email"
@@ -122,16 +131,29 @@
           /><br />
           <input
             type="text"
+            name="subject"
             class="text-input"
             placeholder="Subject"
             required
           />
+          <input type="text" name="honeypot" style="display: none" />
           <!-- <label for="message"
             >Your Message: <span class="required">*</span></label
           > -->
           <textarea name="message" placeholder="Message" required></textarea
           ><br />
-          <input type="submit" value="Send" class="send" />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://consent.team/pages/contact/contact.html"
+          />
+          <input
+            type="button"
+            value="SEND"
+            id="btnSubmit"
+            class="send"
+            onclick="submitForm()"
+          />
         </form>
         <hr />
         <h1 data-key="contactHeadingThree">Other way</h1>
@@ -152,5 +174,6 @@
         </div>
       </div>
     </div>
+    <script src="contact.js"></script>
   </body>
 </html>

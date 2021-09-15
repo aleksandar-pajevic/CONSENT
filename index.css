@@ -556,6 +556,7 @@ select:focus {
     top: 100px !important;
   }
   .nav-title {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
+
