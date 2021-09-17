@@ -459,7 +459,7 @@ select:focus {
   select {
     font-size: 12px;
   }
-  .container {
+  #multiscroll .container {
     height: calc(100vh - 70px);
   }
 }
