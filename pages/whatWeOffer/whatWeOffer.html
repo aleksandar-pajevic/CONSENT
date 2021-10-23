@@ -48,18 +48,18 @@
         </label>
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
-        <li><a href="/index.html" id="home" data-key="navHome">Home</a></li>
+        <li><a href="/index.html" id="home" data-key="navHome">Početna</a></li>
         <li>
           <a
             href="/pages/whatWeOffer/whatWeOffer.html"
             id="whatWeOffer"
             data-key="navOffer"
-            >What We Offer</a
+            >Šta Nudimo</a
           >
         </li>
         <li>
           <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
-            >Our Team</a
+            >Naš Tim</a
           >
         </li>
         <li>
@@ -67,11 +67,11 @@
             href="/pages/contact/contact.html"
             id="contact"
             data-key="navContact"
-            >Contact</a
+            >Kontakt</a
           >
         </li>
       </ul>
-      <div class="custom-select">
+      <!-- <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
 
         <select id="language" onchange="changeLanguage()">
@@ -80,12 +80,22 @@
           <option value="ru">Russian</option>
           <option value="it">Italian</option>
         </select>
-      </div>
+      </div> -->
     </div>
   </header>
   <body onLoad="whatWeOfferFocus(), onLoadLanguage()">
     <div class="container">
-      <h1 data-key="wwoMainHeading">our area of expertise</h1>
+      <h1 data-key="wwoMainHeading">Naša polja ekspertize</h1>
+      <!-- <p>
+        Totalna podrška u domenu poslovne strategije, razvoja, investicija,
+        kapitalne izgradnje i upravljanja projektima. CONSENT NETWORKING u
+        svakoj od linija svog poslovanja ima obrazovane, iskusne i vešte
+        profesionalce sposobne i inspirisane da svaku poslovnu ideju svojih
+        klijenata unaprede i realizuju. Dodata vrednost karakteriše realizovane
+        usluge našim klijentima, zadovoljstvo i ponos kvalitetom obaveljenog
+        posla. Naša mreža naše klijente i partnere vodi tamo gde se pronalazi
+        interes posla.
+      </p> -->
       <div class="cardsWrap">
         <div class="card">
           <div class="title">Investicioni konsalting</div>
@@ -327,38 +337,90 @@
         <div class="card">
           <div class="title">Poslovni konsalting</div>
           <div class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-            optio ut, dolorem expedita architecto quos earum rerum non placeat
-            blanditiis? Nulla autem harum voluptates cum nobis nam odio quas
-            cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Veritatis optio ut, dolorem expedita architecto quos earum rerum non
-            placeat blanditiis?
+            <ul>
+              <li>Kreiranje i implementacija strategije</li>
+              <li>
+                Unapređenje efektivnosti i efikasnosti operativnog upravljanja
+              </li>
+              <li>Upravljanje pomoću projekata</li>
+              <li>Upravljanje projektima</li>
+              <li>Upravljanje stejkholderima</li>
+            </ul>
           </div>
-          <a class="readMore" href="#openModal"></a>
+          <a class="readMore" href="#poslovniKons"></a>
+        </div>
+        <div id="poslovniKons" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <h2>Poslovni konsalting</h2>
+            <p>
+              Savremeni trendovi i promena paradigme poslovanja jačaju potrebu
+              integracije traže usvajanje principa otvorenosti. <br />
+              Consent tim svoju organizacionu strukturu bazira na tom principu,
+              gradeći odnose sa privrednom i društvom na način da svojim
+              partnerima ponudi ono što im je zaista potrebno. Pri tome, sve
+              svoje klijente smatra za potencijalne pružaoce usluga postojećim i
+              budućim klijentima, na principima umrežavanja. Pri tome se
+              perspektivno i profitabilno poslovanje podrazumeva.
+            </p>
+            <h3>Ključne oblasti ekspertize:</h3>
+            <ol>
+              <li>Kreiranje i implementacija strategije</li>
+              <li>
+                Unapređenje efektivnosti i efikasnosti operativnog upravljanja
+              </li>
+              <li>Upravljanje pomoću projekata</li>
+              <li>Upravljanje projektima</li>
+              <li>Upravljanje stejkholderima</li>
+            </ol>
+          </div>
         </div>
         <div class="card">
           <div class="title">Društveno odgovorno poslovanje</div>
           <div class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-            optio ut, dolorem expedita architecto quos earum rerum non placeat
-            blanditiis? Nulla autem harum voluptates cum nobis nam odio quas
-            cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Veritatis optio ut, dolorem expedita architecto quos earum rerum non
-            placeat blanditiis?
+            CSR - Na konceptu društveno odgovornog poslovanja se zasniva način
+            pružanja naših usluga...
           </div>
-          <a class="readMore" href="#"></a>
+          <a class="readMore" href="#drustvenoPoslovanje"></a>
+        </div>
+        <div id="drustvenoPoslovanje" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+
+            <h2>Društveno odgovorno poslovanje</h2>
+            <p>
+              CSR - Na konceptu društveno odgovornog poslovanja se zasniva način
+              pružanja naših usluga. Integracija društvene i ekološke
+              odgovornosti u saradnji sa svim zainteresovanim stranama je ključ
+              poslovnog uspeha, uz uvažavanje očekivanja vlasnika kapitala -
+              rast vrednosti. <br />
+              CSR razvijamo kao strateški koncept poslovnog upravljanja, bez
+              obzira da li se radi o velikim ili malim preduzećima: upravljanje
+              životnom sredinom, ekološka efikasnost, odgovorno snabdevanje,
+              uključenost stejkholdera, standardizacija rada, odnos prema
+              članovima lokalne zajednice i drugo. <br />
+              Implementacijom koncepta stvaramo konkurentsku prednost,
+              preduslove za realizaciju poslovne misije ili projekata i dodatu
+              vrednost. <br />
+              Lideri našeg tima su kroz višedecenijsku praksu na ovim principima
+              podigli mala i srednja preduzeća i uticali da se CSR koristi kao
+              investicija velikih međunarodnih kompanija sa podržavajućim ili
+              čak ključnim uticajem na performanse kompanija za koje su radili.
+            </p>
+          </div>
         </div>
       </div>
       <h4>
-        <i class="fas fa-mountain" style="margin-right: 6px"></i>reach the top
-        with us
-        <i class="fas fa-mountain" style="margin-left: 5px"></i>
+        <!-- <i class="fas fa-mountain" style="margin-right: 6px"></i> -->
+        Uz Nas Stignite Do Vrha
+        <!-- <i class="fas fa-mountain" style="margin-left: 5px"></i> -->
       </h4>
       <a
         href="/pages/contact/contact.html"
         class="slideButton"
         data-key="slideBtnThird"
-        >Join Our Team</a
+        >Pridruži Nam Se</a
       >
     </div>
     <img

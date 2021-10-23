@@ -45,6 +45,7 @@ h4 {
 p {
   padding: 0 15%;
   color: whitesmoke;
+  line-height: 140%;
 }
 .slideButton {
   display: flex;
