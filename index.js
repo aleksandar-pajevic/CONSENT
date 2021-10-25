@@ -26,13 +26,13 @@ function opacityInc(overlay) {
   let overlays = document.getElementsByClassName(overlay);
 
   for (var i = 0; i < overlays.length; i++) {
-    overlays[i].style.opacity = '0.8';
+    overlays[i].style.opacity = '0.5';
   }
 }
 function opacityDec(overlay) {
   let overlays = document.getElementsByClassName(overlay);
 
   for (var i = 0; i < overlays.length; i++) {
-    overlays[i].style.opacity = '0.5';
+    overlays[i].style.opacity = '0.4';
   }
 }

@@ -23,7 +23,7 @@ body {
   background-color: black;
 }
 .second-half {
-  background-image: linear-gradient(to left, #e5a45967, #000000),
+  background-image: linear-gradient(to left, #e5a45917, #000000),
     url(../../assets/pictures/ourTeam/move.jpg);
   background-size: cover;
   background-position: center;
