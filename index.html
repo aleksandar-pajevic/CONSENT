@@ -19,31 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="jquery.multiscroll.min.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#myContainer').multiscroll({
-          // sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
-          anchors: ['first', 'second', 'third', 'fourth'],
-          verticalCentered: true,
-          menu: '#menu',
-          css3: true,
-          paddingTop: '0px',
-          loopTop: false,
-          loopBottom: false,
-          navigation: true,
-          navigationColor: 'gray',
-        });
-      });
-    </script>
 
     <script src="index.js"></script>
     <script src="languages.js"></script>
@@ -106,200 +82,54 @@
 
    -->
   <body onLoad="homeFocus() ">
-    <div id="multiscroll">
-      <div class="ms-left">
-        <div class="ms-section first">
-          <div class="container">
-            <div class="leftFirstHalf">
-              <div
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="leftFirstOverlay left1-1"
-              ></div>
-              <h2
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="slideHeading"
-                data-key="slideHeadingFirst"
-              >
-                Sa Vama rame-uz-rame Celim Putem
-              </h2>
-            </div>
-            <div class="leftSecondHalf">
-              <div class="leftSecondOverlay left1-2"></div>
-              <a
-                href="/pages/ourTeam/ourTeam.html"
-                class="slideButton"
-                data-key="slideBtnFirst"
-                >Naša Grupa</a
-              >
-            </div>
-          </div>
+    <div class="home">
+      <div class="oneHalf" id="firstHalf">
+        <div class="leftFirstHalf">
+          <div
+            onmouseover="opacityInc('leftFirstOverlay')"
+            onmouseout="opacityDec('leftFirstOverlay')"
+            class="leftFirstOverlay left1-1"
+          ></div>
+          <h2
+            onmouseover="opacityInc('leftFirstOverlay')"
+            onmouseout="opacityDec('leftFirstOverlay')"
+            class="slideHeading"
+            data-key="slideHeadingFirst"
+          >
+            Naša misija je da vas oslobodimo poslovnog napora.
+          </h2>
         </div>
-        <div class="ms-section second">
-          <div class="container">
-            <div class="leftFirstHalf">
-              <div
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="leftFirstOverlay left2-1"
-              ></div>
-              <h2
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="slideHeading"
-                data-key="slideHeadingSecond"
-              >
-                Dodajte naše talenate vašem timu
-              </h2>
-            </div>
-            <div class="leftSecondHalf">
-              <div class="leftSecondOverlay left2-2"></div>
-              <a
-                href="/pages/whatWeOffer/whatWeOffer.html"
-                class="slideButton"
-                data-key="slideBtnSecond"
-                >Šta Nudimo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="ms-section third">
-          <div class="container">
-            <div class="leftFirstHalf">
-              <div
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="leftFirstOverlay left3-1"
-              ></div>
-              <h2
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="slideHeading"
-                data-key="slideHeadingThird"
-              >
-                Radimo Zajedno Sa Istim Ciljem
-              </h2>
-            </div>
-            <div class="leftSecondHalf">
-              <div class="leftSecondOverlay left3-2"></div>
-              <a
-                href="/pages/contact/contact.html"
-                class="slideButton"
-                data-key="slideBtnThird"
-                >Pridruži Nam Se</a
-              >
-            </div>
-          </div>
+        <div class="leftSecondHalf">
+          <div class="leftSecondOverlay left1-2"></div>
         </div>
       </div>
-      <div class="ms-right">
-        <div class="ms-section first">
-          <div class="container">
-            <div class="rightFirstHalf">
-              <div class="rightFirstOverlay right1-1"></div>
-            </div>
-            <div class="rightSecondHalf">
-              <div
-                onmouseover="opacityInc('rightSecondOverlay')"
-                onmouseout="opacityDec('rightSecondOverlay')"
-                class="rightSecondOverlay right1-2"
-              ></div>
-              <p
-                onmouseover="opacityInc('rightSecondOverlay')"
-                onmouseout="opacityDec()"
-                class="slideDescription"
-                data-key="slideDescriptionFirst"
-              >
-                Pragmatizam i komunikacija su bitni delovi naše DNK. Zato naši
-                stručnjaci rade sa vašim timovima što je moguće bliže
-                operativnoj stvarnosti.
-              </p>
-            </div>
-          </div>
-          <!-- ispod ide logo -->
-          <img
-            src="assets/pictures/LOGO_text.png"
-            alt="logo"
-            class="slideLogoText"
-          />
-          <img
-            src="assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
+      <div class="oneHalf" id="secondHalf">
+        <div class="rightFirstHalf">
+          <div class="rightFirstOverlay right1-1"></div>
         </div>
-        <div class="ms-section second">
-          <div class="container">
-            <div class="rightFirstHalf">
-              <div class="rightFirstOverlay right2-1"></div>
-            </div>
-            <div
-              onmouseover="opacityInc('rightSecondOverlay')"
-              onmouseout="opacityDec('rightSecondOverlay')"
-              class="rightSecondHalf"
-            >
-              <div class="rightSecondOverlay right2-2"></div>
+        <div class="rightSecondHalf">
+          <div
+            onmouseover="opacityInc('rightSecondOverlay')"
+            onmouseout="opacityDec('rightSecondOverlay')"
+            class="rightSecondOverlay right1-2"
+          ></div>
+          <p
+            onmouseover="opacityInc('rightSecondOverlay')"
+            onmouseout="opacityDec('rightSecondOverlay')"
+            class="slideDescription"
+            data-key="slideDescriptionFirst"
+          >
+            <span class="spanFirst"
+              >"Geniji su one osobe pored kojih kada staneš ne osećaš nikakav
+              napor. Eto ko su geniji." <br />
+              <span id="paolo">Paolo Sorrentino</span>
+            </span>
 
-              <p
-                onmouseover="opacityInc('rightSecondOverlay')"
-                onmouseout="opacityDec('rightSecondOverlay')"
-                class="slideDescription"
-                data-key="slideDescriptionSecond"
-              >
-                Upravljanje učinkom, operativna podrška i finansijska rešenja:
-                naše usluge pokrivaju većinu pitanja koja se mogu pojaviti u
-                odeljenjima za finansije.
-              </p>
-            </div>
-          </div>
-          <!-- ispod ide logo -->
-          <img
-            src="assets/pictures/LOGO_text.png"
-            alt="logo"
-            class="slideLogoText"
-          />
-          <img
-            src="assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
-        </div>
-        <div class="ms-section third">
-          <div class="container">
-            <div class="rightFirstHalf">
-              <div class="rightFirstOverlay right3-1"></div>
-            </div>
-            <div
-              onmouseover="opacityInc('rightSecondOverlay')"
-              onmouseout="opacityDec('rightSecondOverlay')"
-              class="rightSecondHalf"
-            >
-              <div class="rightSecondOverlay right3-2"></div>
-
-              <p
-                onmouseover="opacityInc('rightSecondOverlay')"
-                onmouseout="opacityDec('rightSecondOverlay')"
-                class="slideDescription"
-                data-key="slideDescriptionThird"
-              >
-                Tražimo entuzijastične, motivisane kandidate koji se žele
-                fokusirati na uspeh klijenata i žele da budu deo dinamične i
-                ambiciozne firme koja obećava puno avanture.
-              </p>
-            </div>
-          </div>
-          <!-- ispod ide logo -->
-          <img
-            src="assets/pictures/LOGO_text.png"
-            alt="logo"
-            class="slideLogoText"
-          />
-          <img
-            src="assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
+            <span class="spanSecond">
+              Jedini limiti koji postoje su oni koje sebi postavljamo. To ne
+              činimo, inspirisani da uspemo u svemu.
+            </span>
+          </p>
         </div>
       </div>
     </div>

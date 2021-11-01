@@ -19,8 +19,39 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../index.css" />
+    <!-- <link rel="stylesheet" href="../../index.css" /> -->
     <link rel="stylesheet" href="whatWeOffer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../jquery.multiscroll.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../jquery.multiscroll.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#myContainer').multiscroll({
+          // sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
+          anchors: ['first', 'second', 'third', 'fourth'],
+          verticalCentered: true,
+          menu: '#menu',
+          css3: true,
+          paddingTop: '0px',
+          loopTop: false,
+          loopBottom: false,
+          navigation: true,
+          navigationColor: 'gray',
+        });
+      });
+    </script>
     <script
       src="https://kit.fontawesome.com/f45c2a3f40.js"
       crossorigin="anonymous"
@@ -88,350 +119,203 @@
     onLoadLanguage()
 
    -->
-  <body onLoad="whatWeOfferFocus()">
-    <div class="container">
-      <h1 data-key="wwoMainHeading">Naša polja ekspertize</h1>
-      <!-- <p>
-        Totalna podrška u domenu poslovne strategije, razvoja, investicija,
-        kapitalne izgradnje i upravljanja projektima. CONSENT NETWORKING u
-        svakoj od linija svog poslovanja ima obrazovane, iskusne i vešte
-        profesionalce sposobne i inspirisane da svaku poslovnu ideju svojih
-        klijenata unaprede i realizuju. Dodata vrednost karakteriše realizovane
-        usluge našim klijentima, zadovoljstvo i ponos kvalitetom obaveljenog
-        posla. Naša mreža naše klijente i partnere vodi tamo gde se pronalazi
-        interes posla.
-      </p> -->
-      <div class="cardsWrap">
-        <div class="card">
-          <div class="title">Investicioni konsalting</div>
-          <div class="description">
-            <ul>
-              <li>
-                Rešavanje imovinsko pravnih pitanja i pravna podrška projektima
-              </li>
-              <li>
-                Pribavljanja dozvola za izgradnju i rešavanje pitanja iz domena
-                urbanističkog planiranja
-              </li>
-              <li>
-                Ocena isplativosti projekata, projektno upravljanje, inženjering
-                i konsalting u projektnom upravljanju
-              </li>
-            </ul>
-          </div>
-          <a class="readMore" href="#investicioniKons"></a>
-        </div>
-        <div id="investicioniKons" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-
-            <h2>Investicioni konsalting</h2>
-            <h3>
-              Rešavanje imovinsko pravnih pitanja i pravna podrška projektima
-            </h3>
-            <ol>
-              <li>
-                Pravna analiza katastarskih parcela i davanje mišljenja u vezi
-                sa postupkom, mogućnostima i načinom rešavanja imovinsko pravnih
-                pitanja u vezi sa nepokretnostima, uzimajući u obzir
-                urbanističke uslove i uslove za formiranje građevinske parcele,
-                odnosno stvaranje pretpostavki za gradnju
-              </li>
-              <li>
-                Pravna analiza i davanje mišljenja u vezi sa postupkom,
-                mogućnostima i načinom rešavanja imovinsko pravnih pitanja u
-                vezi sa nepokretnostima u postupku priključenja objekata na
-                infrastrukturu
-              </li>
-              <li>
-                Pravna podrška u postupku ozakonjenja objekata, kao i pružanje
-                pravne pomoći u postupku rešavanja imovinsko pravnih pitanja u
-                postupku ozakonjenja
-              </li>
-              <li>
-                Pružanje svih vrsta pravih usluga u vezi sa infrastrukturnim
-                projektima koji se odnose na javno-privatna partnerstva
-              </li>
-              <li>
-                Pružanje svih vrsta pravih usluga u vezi sa projektima u oblasti
-                energetike (vetro parkovi, solarni parkovi i dr.)
-              </li>
-              <li>Izrada pravnih izveštaja (Legal Due Diligence)</li>
-              <li>
-                Davanje pravnih saveta prilikom izrade, kao i sama izrada, svih
-                vrsta ugovora u vezi sa sprovođenjem transakcija koje se odnose
-                na nepokretnosti, kako u postupku pripreme izgradnje, tako i u
-                postupku izgradnje, odnosno nakon okončanja izgradnje
-                infrastrukturnih, industrijskih, komercijalnih i stambenih
-                objekata (ugovori o projektnom finansiranju, ugovori o građenju,
-                ugovori bazirani na FIDIC pravilima ugovaranja, ugovori o
-                kupoprodaji, ugovori o zakupu i dr.)
-              </li>
-              <li>
-                Davanje pravnih mišljenja i pružanje pravne pomoći investitorima
-                u vezi sa kupovinom i/ili prodajom infrastrukturnih,
-                industrijskih, komercijalnih i stambenih objekata, kao i
-                zemljišta u cilju buduće izgradnje
-              </li>
-              <li>
-                Pravna podrška u postupku pribavljanja građevinske i upotrebne
-                dozvole i upis nepokretnosti i prava na nepokretnosti u
-                nadležnom katastru nepokretnosti
-              </li>
-            </ol>
-            <h3>
-              Pribavljanja dozvola za izgradnju i rešavanje pitanja iz domena
-              urbanističkog planiranja
-            </h3>
-            <ol>
-              <li>
-                Analiza urbanističkog statusa lokacija na kojima se planira
-                izgradnja infrastrukturnih, industrijskih, komercijalnih i
-                stambenih objekata na osnovu zahteva investitora
-              </li>
-              <li>
-                Izrada koncepta prilagođavanja urbanističkog statusa lokacije u
-                slučaju nepostojanja osnova za realizaciju izgradnje
-                infrastrukturnih, industrijskih, komercijalnih i stambenih
-                objekta na osovu usaglašenih pristupa od strane investitora
-              </li>
-              <li>
-                Izrada alternativnih rešenja koja ispunjavaju pravila gradnje u
-                slučaju da zahtevi investitora ne mogu biti delimično ili u
-                potpunosti ispunjeni, sa analizom mogućih alternatnivnih rešenja
-                i prednostima i nedostacima svake alternative u postupku
-                urbanističke razrade i realizacije projekta u celini
-              </li>
-              <li>Posredovanje u postupku planske i urbanističke razrade</li>
-              <li>
-                Zastupanje pred organima nadležnim za donošenje rešenja o
-                planskim i urbanističkim aktima, komisijama za planove
-              </li>
-              <li>
-                Koordinacija u postupku izrade idejnih rešenja koja su neophodna
-                za pribavljanje lokacijskih uslova za izradu tehničke
-                dokumentacije i projekata za građevinsku dozvolu
-              </li>
-              <li>
-                Koordinacija u postupku izrade tehničke dokumentacije za
-                pribavljanje dozvola za gradnju i projekata za izvođenje
-              </li>
-              <li>
-                Ishodovanje svih vrsta dozvola i saglasnosti saglasno pozitivnim
-                propisima Republike Srbije na svim nivoima nadležnih organa
-                državne uprave i lokalne samouprave
-              </li>
-              <li>
-                Koordinacija i posredovanje u obezbeđivanju svih preduslova za
-                realizaciju postupka ozakonjenja već sagrađenih objekata, u
-                smislu rešavanja urbanističkog statusa lokacije, ishodovanje
-                saglasnosti organa nadležnog za zaštitu od požara i zaštitu
-                životne sredine
-              </li>
-              <li>
-                Koordinacija u postupku izrade tehničkih izveštaja (Technical
-                Due Diligence)
-              </li>
-            </ol>
-            <h3>
-              Ocena isplativosti projekata, projektno upravljanje, inženjering i
-              konsalting u projektnom upravljanju
-            </h3>
-            <ol>
-              <li>
-                Procena isplativosti kapitalnih ulaganja u uporedna analiza
-                alternativnih mogućnosti ulaganja
-              </li>
-              <li>
-                Savetovanje u oblasti finansiranja i mobilizacije izvora
-                finansiranja, optimizacija alokacije resursa (sopstveni izvori
-                finansiranja, ugovori o kreditu i dr.)
-              </li>
-              <li>
-                Optimizacija procesa planiranja, pripreme i realizacije
-                kapitalnih projekata
-              </li>
-              <li>Strukturiranje projekata i projektno upravljanje</li>
-              <li>
-                Optimizacija troškova posredovanjem tokom tehničkih i
-                komercijalnih pregovora sa zainteresovanim ponuđačima za
-                izvođenje radova i vršenje usluga
-              </li>
-              <li>Inženjering</li>
-              <li>Koordinacija vršenja usluge projektantskog nadzora</li>
-              <li>Koordinacija vršenja usluge stručnog nadzora</li>
-              <li>
-                Optimizacija vremena potrebnog za realizaciju investicionih
-                projekata
-              </li>
-            </ol>
+  <body onLoad="whatWeOfferFocus() ">
+    <div id="multiscroll">
+      <div class="ms-left">
+        <div class="ms-section first">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left1-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingFirst"
+              >
+                Sa Vama rame-uz-rame Celim Putem
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left1-2"></div>
+              <a
+                href="/pages/ourTeam/ourTeam.html"
+                class="slideButton"
+                data-key="slideBtnFirst"
+                >Naša Grupa</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="title">Pravni konsalting</div>
-          <div class="description">
-            <ul>
-              <li>Priprema i realizacija investicionih projekataa</li>
-              <li>Tekuće poslovanje</li>
-              <li>Društveno odgovorno poslovanje</li>
-            </ul>
-          </div>
-          <a class="readMore" href="#pravniKons"></a>
-        </div>
-
-        <div id="pravniKons" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-
-            <h2>Pravni konsalting</h2>
-            <h3>Priprema i realizacija investicionih projekata</h3>
-            <ol>
-              <li>
-                Rešavanje imovinsko pravnih pitanja na katastarskim parcelama
-                predviđenim za gradnju
-              </li>
-              <li>
-                Davanje pravnih mišljenja u vezi sa postupkom, mogućnostima i
-                načinom rešavanja imovinsko-pravnih pitanja na nepokretnostima,
-                uzimajući u obzir urbanističke uslove i uslove za formiranje
-                građevinske parcele
-              </li>
-              <li>
-                Vođenje postupka kupoprodaje privrednih društava,
-                infrastrukturnih, industrijskih, komercijalnih, stambenih
-                objekata i zemljišta
-              </li>
-              <li>Projekti javno privatnog partnerstva</li>
-              <li>Energetski projekti</li>
-              <li>
-                Ugovori o projektnom finansiranju, projektovanju, građenju,
-                kupoprodaji i zakupu nepokretnosti
-              </li>
-              <li>
-                Savetovanje i vođenje postupka pribavljanja dozvola za gradnju i
-                upotrebu objekata
-              </li>
-              <li>
-                Vođenje pravnih pitanja u vezi sa poslovima ozakonjenja
-                nepokretnosti, pribavljanja građevinskih i upotrebnih dozvola,
-                licenci
-              </li>
-            </ol>
-            <h3>Tekuće poslovanje</h3>
-            <ol>
-              <li>Privredno i poslovno pravo</li>
-              <li>
-                Pravno savetovanje i izrada svih vrsta dokumenata i vođenje
-                pravnih transakcija
-              </li>
-              <li>
-                Vođenje postupka pribavljanja odobrenja ispred Komisije za
-                zaštitu konkurencije
-              </li>
-            </ol>
-            <h3>Društveno odgovorno poslovanje</h3>
-            <ol>
-              <li>
-                Izrada i usklađivanje internih akata društva u cilju
-                implementacije ili unapređenja društveno odgovornog poslovnja
-              </li>
-              <li>Projekti sa uticajem na zaštitu životne sredine</li>
-            </ol>
+        <div class="ms-section second">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left2-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingSecond"
+              >
+                Dodajte naše talenate vašem timu
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left2-2"></div>
+              <a
+                href="/pages/whatWeOffer/whatWeOffer.html"
+                class="slideButton"
+                data-key="slideBtnSecond"
+                >Šta Nudimo</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="title">Poslovni konsalting</div>
-          <div class="description">
-            <ul>
-              <li>Kreiranje i implementacija strategije</li>
-              <li>
-                Unapređenje efektivnosti i efikasnosti operativnog upravljanja
-              </li>
-              <li>Upravljanje pomoću projekata</li>
-              <li>Upravljanje projektima</li>
-              <li>Upravljanje stejkholderima</li>
-            </ul>
-          </div>
-          <a class="readMore" href="#poslovniKons"></a>
-        </div>
-        <div id="poslovniKons" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-
-            <h2>Poslovni konsalting</h2>
-            <p>
-              Savremeni trendovi i promena paradigme poslovanja jačaju potrebu
-              integracije traže usvajanje principa otvorenosti. <br />
-              Consent tim svoju organizacionu strukturu bazira na tom principu,
-              gradeći odnose sa privrednom i društvom na način da svojim
-              partnerima ponudi ono što im je zaista potrebno. Pri tome, sve
-              svoje klijente smatra za potencijalne pružaoce usluga postojećim i
-              budućim klijentima, na principima umrežavanja. Pri tome se
-              perspektivno i profitabilno poslovanje podrazumeva.
-            </p>
-            <h3>Ključne oblasti ekspertize:</h3>
-            <ol>
-              <li>Kreiranje i implementacija strategije</li>
-              <li>
-                Unapređenje efektivnosti i efikasnosti operativnog upravljanja
-              </li>
-              <li>Upravljanje pomoću projekata</li>
-              <li>Upravljanje projektima</li>
-              <li>Upravljanje stejkholderima</li>
-            </ol>
-          </div>
-        </div>
-        <div class="card">
-          <div class="title">Društveno odgovorno poslovanje</div>
-          <div class="description">
-            CSR - Na konceptu društveno odgovornog poslovanja se zasniva način
-            pružanja naših usluga...
-          </div>
-          <a class="readMore" href="#drustvenoPoslovanje"></a>
-        </div>
-        <div id="drustvenoPoslovanje" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-
-            <h2>Društveno odgovorno poslovanje</h2>
-            <p>
-              CSR - Na konceptu društveno odgovornog poslovanja se zasniva način
-              pružanja naših usluga. Integracija društvene i ekološke
-              odgovornosti u saradnji sa svim zainteresovanim stranama je ključ
-              poslovnog uspeha, uz uvažavanje očekivanja vlasnika kapitala -
-              rast vrednosti. <br />
-              CSR razvijamo kao strateški koncept poslovnog upravljanja, bez
-              obzira da li se radi o velikim ili malim preduzećima: upravljanje
-              životnom sredinom, ekološka efikasnost, odgovorno snabdevanje,
-              uključenost stejkholdera, standardizacija rada, odnos prema
-              članovima lokalne zajednice i drugo. <br />
-              Implementacijom koncepta stvaramo konkurentsku prednost,
-              preduslove za realizaciju poslovne misije ili projekata i dodatu
-              vrednost. <br />
-              Lideri našeg tima su kroz višedecenijsku praksu na ovim principima
-              podigli mala i srednja preduzeća i uticali da se CSR koristi kao
-              investicija velikih međunarodnih kompanija sa podržavajućim ili
-              čak ključnim uticajem na performanse kompanija za koje su radili.
-            </p>
+        <div class="ms-section third">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left3-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingThird"
+              >
+                Radimo Zajedno Sa Istim Ciljem
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left3-2"></div>
+              <a
+                href="/pages/contact/contact.html"
+                class="slideButton"
+                data-key="slideBtnThird"
+                >Pridruži Nam Se</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <h4>
-        <!-- <i class="fas fa-mountain" style="margin-right: 6px"></i> -->
-        Sa Nama Do Vrha
-        <!-- <i class="fas fa-mountain" style="margin-left: 5px"></i> -->
-      </h4>
-      <a
-        href="/pages/contact/contact.html"
-        class="slideButton"
-        data-key="slideBtnThird"
-        >Pridruži Nam Se</a
-      >
+      <div class="ms-right">
+        <div class="ms-section first">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right1-1"></div>
+            </div>
+            <div class="rightSecondHalf">
+              <div
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="rightSecondOverlay right1-2"
+              ></div>
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec()"
+                class="slideDescription"
+                data-key="slideDescriptionFirst"
+              >
+                Pragmatizam i komunikacija su bitni delovi naše DNK. Zato naši
+                stručnjaci rade sa vašim timovima što je moguće bliže
+                operativnoj stvarnosti.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+        <div class="ms-section second">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right2-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right2-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionSecond"
+              >
+                Upravljanje učinkom, operativna podrška i finansijska rešenja:
+                naše usluge pokrivaju većinu pitanja koja se mogu pojaviti u
+                odeljenjima za finansije.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+        <div class="ms-section third">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right3-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right3-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionThird"
+              >
+                Tražimo entuzijastične, motivisane kandidate koji se žele
+                fokusirati na uspeh klijenata i žele da budu deo dinamične i
+                ambiciozne firme koja obećava puno avanture.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+      </div>
     </div>
-    <img
-      src="../../assets/pictures/LOGO_orah.png"
-      alt="logo"
-      class="slideLogoOrah"
-    />
   </body>
 </html>
