@@ -17,10 +17,10 @@
   font-weight: 300;
   font-style: italic;
   color: #d88d42;
-  font-size: 18px;
+  font-size: 20px;
 }
 .spanSecond {
-  font-size: 24px;
+  font-size: 30px;
 }
 #paolo {
   text-align: right;
@@ -347,7 +347,7 @@ select:focus {
 /* recomended #282d2d */
 .left1-1,
 .right1-2 {
-  background-color: #635825;
+  background-color: #000000;
 }
 .left1-2,
 .right1-1 {
@@ -381,7 +381,7 @@ select:focus {
 }
 .slideHeading {
   /* font-family: 'Open Sans', sans-serif; */
-  font-size: 37px;
+  font-size: 50px;
   font-weight: 400;
   font-style: italic;
   position: absolute;
@@ -555,7 +555,7 @@ select:focus {
 }
 @media screen and (min-width: 1200px) {
   .slideHeading {
-    font-size: 40px;
+    font-size: 50px;
   }
   .slideDescription {
     font-size: 20px;

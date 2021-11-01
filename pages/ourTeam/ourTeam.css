@@ -24,7 +24,7 @@ body {
 }
 .second-half {
   background-image: linear-gradient(to left, #e5a45917, #000000),
-    url(../../assets/pictures/ourTeam/move.jpg);
+    url(../../assets/pictures/ourTeam/team2.png);
   background-size: cover;
   background-position: center;
   /* min-height: calc(100vh - 70px); */

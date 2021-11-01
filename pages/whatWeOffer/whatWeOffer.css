@@ -205,13 +205,28 @@ select:focus {
   background-position: right;
 }
 .ms-left .first {
-  background-image: url(assets/pictures/slides/home/1L.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/chessSecond1.jpg);
+}
+.ms-left .first2 {
+  background-image: url(../../assets/pictures/whatWeOffer/chess1.jpg);
 }
 .ms-left .second {
-  background-image: url(assets/pictures/slides/home/2L.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/diveOne1.jpg);
+}
+.ms-left .second2 {
+  background-image: url(../../assets/pictures/whatWeOffer/diveTwo1.jpg);
 }
 .ms-left .third {
-  background-image: url(assets/pictures/slides/home/3L.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/veslanje6-1.jpg);
+}
+.ms-left .third2 {
+  background-image: url(../../assets/pictures/whatWeOffer/veslanje4-1.jpg);
+}
+.ms-left .fourth {
+  background-image: url(../../assets/pictures/whatWeOffer/skok1.jpg);
+}
+.ms-left .fifth {
+  background-image: url(../../assets/pictures/whatWeOffer/road1.jpg);
 }
 .ms-right {
   /* width: calc(50% + 1px); */
@@ -225,13 +240,28 @@ select:focus {
   background-position: left;
 }
 .ms-right .first {
-  background-image: url(assets/pictures/slides/home/1R.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/chessSecond2.jpg);
+}
+.ms-right .first2 {
+  background-image: url(../../assets/pictures/whatWeOffer/chess2.jpg);
 }
 .ms-right .second {
-  background-image: url(assets/pictures/slides/home/2R.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/diveOne2.jpg);
+}
+.ms-right .second2 {
+  background-image: url(../../assets/pictures/whatWeOffer/diveTwo2.jpg);
 }
 .ms-right .third {
-  background-image: url(assets/pictures/slides/home/3R.jpg);
+  background-image: url(../../assets/pictures/whatWeOffer/veslanje6-2.jpg);
+}
+.ms-right .third2 {
+  background-image: url(../../assets/pictures/whatWeOffer/veslanje4-2.jpg);
+}
+.ms-right .fourth {
+  background-image: url(../../assets/pictures/whatWeOffer/skok2.jpg);
+}
+.ms-right .fifth {
+  background-image: url(../../assets/pictures/whatWeOffer/road2.jpg);
 }
 
 .container {
@@ -308,29 +338,29 @@ select:focus {
 /* recomended #282d2d */
 .left1-1,
 .right1-2 {
-  background-color: #635825;
+  background-color: #000000;
 }
 .left1-2,
 .right1-1 {
-  background-color: #112a68;
+  background-color: #000000;
 }
 .left2-1,
 .right2-2 {
-  background-color: #b6bdcf;
+  background-color: #000000;
 }
 .left2-2,
 .right2-1 {
-  background-color: #040405;
+  background-color: #000000;
 }
 .left3-1,
 .right3-2 {
   /* background-color: #342836; */
-  background-color: #6f522e;
+  background-color: #000000;
 }
 .left3-2,
 .right3-1 {
   /* background-color: #6f726e; */
-  background-color: #1c2629;
+  background-color: #000000;
 }
 
 .slideHeading,
@@ -359,7 +389,7 @@ select:focus {
   position: absolute;
   bottom: 0.5%;
   right: 1%;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .slideButton {
@@ -516,7 +546,7 @@ select:focus {
 }
 @media screen and (min-width: 1200px) {
   .slideHeading {
-    font-size: 30px;
+    font-size: 50px;
   }
   .slideDescription {
     font-size: 20px;

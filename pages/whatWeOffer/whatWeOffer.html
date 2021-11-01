@@ -40,7 +40,16 @@
       $(document).ready(function () {
         $('#myContainer').multiscroll({
           // sectionsColor: ['#00b3d7', '#ed2', '#ff73a1'],
-          anchors: ['first', 'second', 'third', 'fourth'],
+          anchors: [
+            'first',
+            'first2',
+            'second',
+            'second2',
+            'third',
+            'third2',
+            'fourth',
+            'fifth',
+          ],
           verticalCentered: true,
           menu: '#menu',
           css3: true,
@@ -57,7 +66,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../../index.js"></script>
+    <script src="./WhatWeOffer.js"></script>
     <script src="../../languages.js"></script>
   </head>
   <header id="header">
@@ -122,6 +131,8 @@
   <body onLoad="whatWeOfferFocus() ">
     <div id="multiscroll">
       <div class="ms-left">
+        <!-- first left slide -->
+
         <div class="ms-section first">
           <div class="container">
             <div class="leftFirstHalf">
@@ -136,20 +147,46 @@
                 class="slideHeading"
                 data-key="slideHeadingFirst"
               >
-                Sa Vama rame-uz-rame Celim Putem
+                Poslovno upravljanje <br />
+                <span style="font-size: 16px">
+                  Napravite pravi potez i ostanite otvoreni za svet</span
+                >
               </h2>
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left1-2"></div>
-              <a
-                href="/pages/ourTeam/ourTeam.html"
-                class="slideButton"
-                data-key="slideBtnFirst"
-                >Naša Grupa</a
-              >
             </div>
           </div>
         </div>
+
+        <div class="ms-section first2">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left1-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingFirst"
+              >
+                Poslovno upravljanje <br />
+                <span style="font-size: 16px">
+                  Napravite pravi potez i ostanite otvoreni za svet</span
+                >
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left1-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second left slide -->
+
         <div class="ms-section second">
           <div class="container">
             <div class="leftFirstHalf">
@@ -164,20 +201,48 @@
                 class="slideHeading"
                 data-key="slideHeadingSecond"
               >
-                Dodajte naše talenate vašem timu
+                Investiciono savetovanje <br />
+                <span style="font-size: 16px">
+                  Otvorite nam vrata, unosimo sva znanja, iskustvo i veštine da
+                  vaše investicije budu isplativije</span
+                >
               </h2>
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left2-2"></div>
-              <a
-                href="/pages/whatWeOffer/whatWeOffer.html"
-                class="slideButton"
-                data-key="slideBtnSecond"
-                >Šta Nudimo</a
-              >
             </div>
           </div>
         </div>
+
+        <div class="ms-section second2">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left2-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingSecond"
+              >
+                Investiciono savetovanje <br />
+                <span style="font-size: 16px">
+                  Otvorite nam vrata, unosimo sva znanja, iskustvo i veštine da
+                  vaše investicije budu isplativije</span
+                >
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left2-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third left slide -->
+
         <div class="ms-section third">
           <div class="container">
             <div class="leftFirstHalf">
@@ -192,22 +257,111 @@
                 class="slideHeading"
                 data-key="slideHeadingThird"
               >
-                Radimo Zajedno Sa Istim Ciljem
+                Upravljanje projektima <br />
+                <span style="font-size: 16px">
+                  Zadovoljiti očekivanja svih zainteresovanih strana je smernica
+                  za uspeh svakog projekta, pomoću kojih se upravlja i dostiže
+                  održivost u poslovanju</span
+                >
               </h2>
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left3-2"></div>
-              <a
-                href="/pages/contact/contact.html"
-                class="slideButton"
-                data-key="slideBtnThird"
-                >Pridruži Nam Se</a
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-section third2">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left3-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingThird"
               >
+                Upravljanje projektima <br />
+                <span style="font-size: 16px">
+                  Zadovoljiti očekivanja svih zainteresovanih strana je smernica
+                  za uspeh svakog projekta, pomoću kojih se upravlja i dostiže
+                  održivost u poslovanju</span
+                >
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left3-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth left slide -->
+
+        <div class="ms-section fourth">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left3-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingThird"
+              >
+                Totalna podrška <br />
+                <span style="font-size: 16px">
+                  Imperativ za nas je da oblikujemo vaše poslovanje. Kao što
+                  vaši projekti oblikuju naše društvo</span
+                >
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left3-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fifth left slide -->
+
+        <div class="ms-section fifth">
+          <div class="container">
+            <div class="leftFirstHalf">
+              <div
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="leftFirstOverlay left3-1"
+              ></div>
+              <h2
+                onmouseover="opacityInc('leftFirstOverlay')"
+                onmouseout="opacityDec('leftFirstOverlay')"
+                class="slideHeading"
+                data-key="slideHeadingThird"
+              >
+                CSR <br />
+                <span style="font-size: 16px">
+                  Uvek uz vas na pravom putu<br />
+                  Da bi ga sa cilja pogledali i osetili da ste ostavili
+                  trag</span
+                >
+              </h2>
+            </div>
+            <div class="leftSecondHalf">
+              <div class="leftSecondOverlay left3-2"></div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="ms-right">
+        <!-- first right slide -->
+
         <div class="ms-section first">
           <div class="container">
             <div class="rightFirstHalf">
@@ -225,9 +379,10 @@
                 class="slideDescription"
                 data-key="slideDescriptionFirst"
               >
-                Pragmatizam i komunikacija su bitni delovi naše DNK. Zato naši
-                stručnjaci rade sa vašim timovima što je moguće bliže
-                operativnoj stvarnosti.
+                Naše višegodišnje internacionalno iskustvo, uspeh u poslovnom
+                upravljanju i znanje i veštine u upravljanju projektima
+                garantuju da će naši saveti u domenu poslovnih funkcija vaših
+                firmi zadovoljiti vaša očekivanja.
               </p>
             </div>
           </div>
@@ -243,6 +398,46 @@
             class="slideLogoOrah"
           />
         </div>
+
+        <div class="ms-section first2">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right1-1"></div>
+            </div>
+            <div class="rightSecondHalf">
+              <div
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="rightSecondOverlay right1-2"
+              ></div>
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec()"
+                class="slideDescription"
+                data-key="slideDescriptionFirst"
+              >
+                Naše višegodišnje internacionalno iskustvo, uspeh u poslovnom
+                upravljanju i znanje i veštine u upravljanju projektima
+                garantuju da će naši saveti u domenu poslovnih funkcija vaših
+                firmi zadovoljiti vaša očekivanja.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+
+        <!-- second right slide -->
+
         <div class="ms-section second">
           <div class="container">
             <div class="rightFirstHalf">
@@ -261,9 +456,17 @@
                 class="slideDescription"
                 data-key="slideDescriptionSecond"
               >
-                Upravljanje učinkom, operativna podrška i finansijska rešenja:
-                naše usluge pokrivaju većinu pitanja koja se mogu pojaviti u
-                odeljenjima za finansije.
+                Naš tim eksperata do sada je realizovao investicije u vrednosti
+                više milijardi dolara. U realizaciji investicione gradnje za nas
+                praktično nema nepoznanica, od izrade svih vrsta studija,
+                investicione analize alternativnih rešenja i strukturiranja
+                kapitala do urbanističkog planiranja i arhitektonsko tehničkih
+                rešenja, izrade projektno tehničke dokumentacije, pribavljanja
+                svih vrsta dozvola i rešenja za gradnju, vođenja gradnje i
+                nabavke svih vrsta materijala, opreme i usluga, vršenja usluge
+                stručnog nadzora, upravljanja troškovima i pribavljanja dozvola
+                za upotrebu objekata i zastupanja investitora pred nadležnim
+                organima.
               </p>
             </div>
           </div>
@@ -279,6 +482,54 @@
             class="slideLogoOrah"
           />
         </div>
+
+        <div class="ms-section second2">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right2-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right2-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionSecond"
+              >
+                Naš tim eksperata do sada je realizovao investicije u vrednosti
+                više milijardi dolara. U realizaciji investicione gradnje za nas
+                praktično nema nepoznanica, od izrade svih vrsta studija,
+                investicione analize alternativnih rešenja i strukturiranja
+                kapitala do urbanističkog planiranja i arhitektonsko tehničkih
+                rešenja, izrade projektno tehničke dokumentacije, pribavljanja
+                svih vrsta dozvola i rešenja za gradnju, vođenja gradnje i
+                nabavke svih vrsta materijala, opreme i usluga, vršenja usluge
+                stručnog nadzora, upravljanja troškovima i pribavljanja dozvola
+                za upotrebu objekata i zastupanja investitora pred nadležnim
+                organima.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+
+        <!-- third right slide -->
+
         <div class="ms-section third">
           <div class="container">
             <div class="rightFirstHalf">
@@ -297,9 +548,133 @@
                 class="slideDescription"
                 data-key="slideDescriptionThird"
               >
-                Tražimo entuzijastične, motivisane kandidate koji se žele
-                fokusirati na uspeh klijenata i žele da budu deo dinamične i
-                ambiciozne firme koja obećava puno avanture.
+                Upravljanje projektima i upravljanje pomoću projekata je srž
+                našeg poslovanja. Svaki put na koji polazimo sastoji se od više
+                koraka. Na tom putu nas očekuju izazovi, iskušenja, koja težimo
+                da prevaziđemo. Do vašeg cilja želimo da sve vreme uživate i
+                osećate se sigurno i bezbedno. Potom želimo da pođemo na novi
+                put. To su vaši projekti. To je smisao vašeg poslovanja.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+
+        <div class="ms-section third2">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right3-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right3-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionThird"
+              >
+                Upravljanje projektima i upravljanje pomoću projekata je srž
+                našeg poslovanja. Svaki put na koji polazimo sastoji se od više
+                koraka. Na tom putu nas očekuju izazovi, iskušenja, koja težimo
+                da prevaziđemo. Do vašeg cilja želimo da sve vreme uživate i
+                osećate se sigurno i bezbedno. Potom želimo da pođemo na novi
+                put. To su vaši projekti. To je smisao vašeg poslovanja.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+
+        <!-- fourth right slide -->
+
+        <div class="ms-section fourth">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right3-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right3-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionThird"
+              >
+                Pravna podrška našeg tima u domenu privrednog i poslovnog prava
+                je garancija adekvatnog oblika onoga što činimo zajedno:
+                imovinsko pravni odnosi, korporativno pravo, ugovorno pravo i
+                upravni postupci.
+              </p>
+            </div>
+          </div>
+          <!-- ispod ide logo -->
+          <img
+            src="../../assets/pictures/LOGO_text.png"
+            alt="logo"
+            class="slideLogoText"
+          />
+          <img
+            src="../../assets/pictures/LOGO_orah.png"
+            alt="logo"
+            class="slideLogoOrah"
+          />
+        </div>
+
+        <!-- fifth right slide -->
+
+        <div class="ms-section fifth">
+          <div class="container">
+            <div class="rightFirstHalf">
+              <div class="rightFirstOverlay right3-1"></div>
+            </div>
+            <div
+              onmouseover="opacityInc('rightSecondOverlay')"
+              onmouseout="opacityDec('rightSecondOverlay')"
+              class="rightSecondHalf"
+            >
+              <div class="rightSecondOverlay right3-2"></div>
+
+              <p
+                onmouseover="opacityInc('rightSecondOverlay')"
+                onmouseout="opacityDec('rightSecondOverlay')"
+                class="slideDescription"
+                data-key="slideDescriptionThird"
+              >
+                Koncept našeg poslovanja se zasniva na društvenoj odgovornosti,
+                Iako neizostavni deo javne debate o svrsi biznisa i sastavni deo
+                novog i održivog ekonomskog modela, CSR je naša filozofija i
+                predmet naučno istraživačkog rada za korist naših klijenata i
+                društva u celini.
               </p>
             </div>
           </div>
