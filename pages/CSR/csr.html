@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
+    <title>Consent - Professional Consulting</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../../assets/pictures/title_logo_orah3.png" />
-    <title>Consent - Professional Consulting</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,400&display=swap"
@@ -19,21 +19,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../index.css" />
-    <link rel="stylesheet" href="/pages/ourTeam/ourTeam.css" />
+    <link rel="stylesheet" type="text/css" href="../../index.css" />
+    <link rel="stylesheet" type="text/css" href="csr.css" />
+
     <script src="../../index.js"></script>
     <script src="../../languages.js"></script>
-    <script src="/pages/ourTeam/ourTeam.js"></script>
   </head>
+
   <header id="header">
     <div class="nav">
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
         <div class="nav-title">
-          <img
-            src="../../assets/pictures/CONSENT_logo_fix_white.png"
-            alt="nav-logo"
-          />
+          <img src="../../assets/pictures/CONSENT_logo_fix_white.png" alt="nav-logo" />
         </div>
       </div>
       <div class="nav-btn">
@@ -75,16 +73,15 @@
           >
         </li>
       </ul>
-       <div class="custom-select">
+      <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
-
         <select id="language" onchange="changeLanguage()">
           <option value="gb">English</option>
           <option value="rs">Srpski</option>
           <option value="it">Italiano</option>
           <option value="ru">Русский</option>
         </select>
-      </div> 
+      </div>
     </div>
   </header>
   <!-- 
@@ -92,32 +89,50 @@
     onLoadLanguage()
 
    -->
-  <body onLoad="ourTeamFocus(), onLoadLanguage()">
-    <div class="container">
-      <div class="first-half">
-        <h1>    
-          <img
-          src="../../assets/pictures/LOGO_orahlogoWhite.png"
-          alt="logo"
-          class="logoHeading"
-        /></h1>
-        <p data-key="ourTeamParagraph">
-        </p>
-        <h4 data-key="ourTeamSlogan">
-        </h4>
-        <a
-          href="/pages/contact/contact.html"
-          class="slideButton"
-          data-key="contactUsBtn"
-          ></a
-        >
+  <body onLoad="csrFocus(), onLoadLanguage()">
+    <div class="home">
+      <div class="oneHalf" id="firstHalf">
+        <div class="leftFirstHalf">
+          <div
+            onmouseover="opacityInc('leftFirstOverlay')"
+            onmouseout="opacityDec('leftFirstOverlay')"
+            class="leftFirstOverlay left1-1"
+          ></div>
+          <h2
+            onmouseover="opacityInc('leftFirstOverlay')"
+            onmouseout="opacityDec('leftFirstOverlay')"
+            class="slideHeading"
+            data-key="csrHeading"
+          >
+          
+          </h2>
+        </div>
+        <div class="leftSecondHalf">
+          <div class="leftSecondOverlay left1-2"></div>
+        </div>
       </div>
-
-      <div class="second-half">
-        <div class="imgOverlay"></div>
+      <div class="oneHalf" id="secondHalf">
+        <div class="rightFirstHalf">
+          <div class="rightFirstOverlay right1-1"></div>
+        </div>
+        <div class="rightSecondHalf">
+          <div
+            onmouseover="opacityInc('rightSecondOverlay')"
+            onmouseout="opacityDec('rightSecondOverlay')"
+            class="rightSecondOverlay right1-2"
+          ></div>
+          <p
+            onmouseover="opacityInc('rightSecondOverlay')"
+            onmouseout="opacityDec('rightSecondOverlay')"
+            class="slideDescription"
+          >
+          <span 
+          data-key="csrDesription"
+          class="spanFirst"
+          ></span>
+          </p>
+        </div>
       </div>
     </div>
- 
-
   </body>
 </html>

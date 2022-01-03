@@ -17,6 +17,9 @@ function ourTeamFocus() {
 function contactFocus() {
   document.getElementById('contact').classList.add('activeNav');
 }
+function csrFocus() {
+  document.getElementById('CSR').classList.add('activeNav');
+}
 
 function opacityInc(overlay) {
   let overlays = document.getElementsByClassName(overlay);

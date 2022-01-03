@@ -127,7 +127,7 @@ hr {
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 100%;
-  margin-top: 20px;
+  margin-top: 1vh;
   display: block;
 }
 
@@ -144,6 +144,9 @@ span.required {
 
 .address {
   margin-left: 5%;
+  display: inline-block;
+  min-width: 111%;
+}
 }
 #header {
   z-index: 1001;

@@ -27,7 +27,7 @@
 #header {
   top: 0px;
   position: fixed;
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -91,16 +91,16 @@ body {
 }
 
 .nav > .nav-links > li > a:hover {
-  padding: 23px 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  padding: 26px 10px;
+  background-color: rgba(0, 0, 0, 0.123);
 }
 /* .nav > .nav-links > li > a:active {
   color: #e5a459;
 } */
 .activeNav {
-  color: #e5a459 !important;
+  /* color: #e5a459 !important; */
   outline: none;
-  padding: 23px 10px !important;
+  padding: 28px 10px !important;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -151,7 +151,7 @@ select:focus {
 }
 /*responsive nav*/
 
-@media (max-width: 623px) {
+@media (max-width: 740px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -203,8 +203,9 @@ select:focus {
   .custom-select {
     position: absolute;
     display: block;
-    top: 350px;
+    top: 425px;
     transition: all 0.2s step-end;
+    width: 100%;
   }
   select {
     background-color: #333;
@@ -272,6 +273,7 @@ select:focus {
 .leftFirstHalf {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -318,10 +320,12 @@ select:focus {
   display: flex;
   min-height: 100%;
   justify-content: space-evenly;
-  flex-direction: column-reverse;
+  flex-direction: column;
   text-align: start;
 }
-
+.handwritten {
+  font-family: 'Marck Script', cursive;
+}
 .leftFirstOverlay,
 .rightSecondOverlay {
   position: absolute;
@@ -377,7 +381,7 @@ select:focus {
 }
 .slideHeading {
   /* font-family: 'Open Sans', sans-serif; */
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   font-style: italic;
   position: absolute;
@@ -462,8 +466,8 @@ select:focus {
     transform: scale(0.45);
   }
   .slideHeading {
-    max-width: 95%;
-    font-size: 22px;
+    max-width: 90%;
+    font-size: 14px;
   }
   .slideDescription {
     min-width: 92%;
@@ -495,7 +499,7 @@ select:focus {
   }
   .slideHeading {
     max-width: 95%;
-    font-size: 30px;
+    font-size: 24px;
   }
   .slideDescription {
     min-width: 92%;
@@ -510,7 +514,7 @@ select:focus {
 @media screen and (min-width: 576px) {
   .slideHeading {
     max-width: 95%;
-    font-size: 34px;
+    font-size: 26px;
   }
   .slideDescription {
     min-width: 90%;
@@ -525,8 +529,12 @@ select:focus {
     font-size: 16px;
   }
   .activeNav {
-    padding: 25px 10px !important;
+    padding: 26px 10px !important;
   }
+  .nav > .nav-links > li > a:hover {
+    padding: 26px 10px !important;
+  }
+
   .slideButton,
   .slideLogoOrah {
     transform: scale(0.7);
@@ -535,33 +543,47 @@ select:focus {
     transform: scale(0.9);
   }
   .nav {
-    padding: 0 0.6%;
+    padding: 0 2%;
   }
 
-  .flag-icon {
+  /* .flag-icon {
     height: 12px;
   }
   select {
     font-size: 12px;
-  }
+  } */
   #multiscroll .container {
     height: calc(100vh - 70px);
   }
 }
 
 @media screen and (min-width: 624px) {
-  .nav-header {
-    max-width: 30%;
+  .slideHeading {
+    max-width: 95%;
+    font-size: 26px;
   }
+
+  .slideDescription .spanFirst {
+    font-size: 20px;
+  }
+  .slideDescription .spanSecond {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 741px) {
   .nav-title {
     transform: scale(0.35);
+  }
+  .nav-header {
+    max-width: 0%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .slideHeading {
     max-width: 95%;
-    font-size: 42px;
+    font-size: 28px;
   }
   .slideDescription {
     min-width: 90%;
@@ -583,7 +605,7 @@ select:focus {
     transform: scale(1);
   }
   .nav {
-    padding: 0 5%;
+    padding: 0 2%;
   }
   .nav > .nav-links {
     font-size: 16px;
@@ -594,17 +616,23 @@ select:focus {
   select {
     font-size: 15px;
   }
+  .nav .nav-links li a:hover {
+    padding: 31px 10px !important;
+  }
+  .activeNav {
+    padding: 31px 10px !important;
+  }
 }
 @media screen and (min-width: 992px) {
   .slideHeading {
     max-width: 95%;
-    font-size: 46px;
+    font-size: 34px;
   }
   .slideDescription {
     min-width: 90%;
   }
   .slideDescription .spanFirst {
-    font-size: 26px;
+    font-size: 25px;
   }
   .slideDescription .spanSecond {
     font-size: 22px;
@@ -615,8 +643,11 @@ select:focus {
   .nav .nav-links {
     font-size: 18px;
   }
+  .nav .nav-links li a:hover {
+    padding: 29px 10px !important;
+  }
   .activeNav {
-    padding: 24px 10px !important;
+    padding: 29px 10px !important;
   }
   .slideButton,
   .slideLogoOrah {
@@ -628,8 +659,8 @@ select:focus {
 }
 @media screen and (min-width: 1200px) {
   .slideHeading {
-    max-width: 95%;
-    font-size: 50px;
+    max-width: 80%;
+    font-size: 30px;
   }
   .slideDescription {
     min-width: 90%;
@@ -647,7 +678,7 @@ select:focus {
     font-size: 20px;
   }
   .activeNav {
-    padding: 23px 10px !important;
+    padding: 28px 10px !important;
   }
   .slideButton,
   .slideLogoOrah {
@@ -667,8 +698,8 @@ select:focus {
 }
 @media screen and (min-width: 2200px) {
   .slideHeading {
-    max-width: 95%;
-    font-size: 76px;
+    max-width: 80%;
+    font-size: 55px;
   }
   .slideDescription {
     min-width: 90%;

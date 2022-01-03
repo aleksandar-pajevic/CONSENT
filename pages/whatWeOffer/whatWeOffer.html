@@ -48,7 +48,7 @@
             'third',
             'third2',
             'fourth',
-            'fifth',
+            'fifth'
           ],
           verticalCentered: true,
           menu: '#menu',
@@ -57,9 +57,9 @@
           loopTop: false,
           loopBottom: false,
           navigation: true,
-          navigationColor: 'gray',
-        });
-      });
+          navigationColor: 'gray'
+        })
+      })
     </script>
     <script
       src="https://kit.fontawesome.com/f45c2a3f40.js"
@@ -75,7 +75,7 @@
       <div class="nav-header">
         <div class="nav-title">
           <img
-            src="../../assets/pictures/CONSENT_logo_fix.png"
+            src="../../assets/pictures/CONSENT_logo_fix_white.png"
             alt="nav-logo"
           />
         </div>
@@ -88,39 +88,42 @@
         </label>
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
-        <li><a href="/index.html" id="home" data-key="navHome">Početna</a></li>
+        <li><a href="/index.html" id="home" data-key="navHome"></a></li>
+        <li>
+          <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
+            ></a
+          >
+        </li>
         <li>
           <a
             href="/pages/whatWeOffer/whatWeOffer.html"
             id="whatWeOffer"
             data-key="navOffer"
-            >Šta Nudimo</a
+            ></a
           >
         </li>
         <li>
-          <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
-            >Naš Tim</a
-          >
+          <a href="/pages/CSR/csr.html" id="CSR" data-key="navCSR"></a>
         </li>
         <li>
           <a
             href="/pages/contact/contact.html"
             id="contact"
             data-key="navContact"
-            >Kontakt</a
+            ></a
           >
         </li>
       </ul>
-      <!-- <div class="custom-select">
+      <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
 
         <select id="language" onchange="changeLanguage()">
           <option value="gb">English</option>
-          <option value="rs">Serbian</option>
-          <option value="ru">Russian</option>
-          <option value="it">Italian</option>
+          <option value="rs">Srpski</option>
+          <option value="it">Italiano</option>
+          <option value="ru">Русский</option>
         </select>
-      </div> -->
+      </div>
     </div>
   </header>
   <!-- 
@@ -128,7 +131,8 @@
     onLoadLanguage()
 
    -->
-  <body onLoad="whatWeOfferFocus() ">
+
+  <body onLoad="whatWeOfferFocus(), onLoadLanguage()">
     <div id="multiscroll">
       <div class="ms-left">
         <!-- first left slide -->
@@ -146,12 +150,8 @@
                 onmouseout="opacityDec('leftFirstOverlay')"
                 class="slideHeading"
                 data-key="slideHeadingFirst"
-              >
-                Poslovno upravljanje <br />
-                <span class="subHeading">
-                  Napravite pravi potez</span
-                >
-              </h2>
+              ></h2>
+              <p class="subHeading" data-key="slideSubHeadingFirst"></p>
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left1-2"></div>
@@ -175,11 +175,11 @@
                 class="slideHeading"
                 data-key="slideHeadingSecond"
               >
-                Investiciono savetovanje <br />
-                <span class="subHeading">
-                  Dodajemo svoja znanja, iskustvo i veštine</span
-                >
+       
               </h2>
+              <p class="subHeading" data-key="slideSubHeadingSecond">
+             
+              </p>
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left2-2"></div>
@@ -203,11 +203,10 @@
                 class="slideHeading"
                 data-key="slideHeadingThird"
               >
-                Upravljanje projektima <br />
-                <span class="subHeading">
-                  Zadovoljiti očekivanja svih zainteresovanih strana</span
-                >
               </h2>
+                <p class="subHeading" data-key="slideSubHeadingThird">
+                  </p
+                >
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left3-2"></div>
@@ -215,10 +214,9 @@
           </div>
         </div>
 
-
         <!-- fourth left slide -->
 
-        <div class="ms-section fourth top-right">
+        <div class="ms-section fourth" style="background-position: right top;">
           <div class="container">
             <div class="leftFirstHalf">
               <div
@@ -230,13 +228,13 @@
                 onmouseover="opacityInc('leftFirstOverlay')"
                 onmouseout="opacityDec('leftFirstOverlay')"
                 class="slideHeading"
-                data-key="slideHeadingThird"
+                data-key="slideHeadingFourth"
               >
-                Totalna podrška <br />
-                <span class="subHeading">
-                  Uživati u putu. Stići na cilj</span
-                >
+              
               </h2>
+                <p class="subHeading" data-key="slideSubHeadingFourth">
+                  </p
+                >
             </div>
             <div class="leftSecondHalf">
               <div class="leftSecondOverlay left3-2"></div>
@@ -245,32 +243,6 @@
         </div>
 
         <!-- fifth left slide -->
-
-        <div class="ms-section fifth top-right">
-          <div class="container">
-            <div class="leftFirstHalf">
-              <div
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="leftFirstOverlay left3-1"
-              ></div>
-              <h2
-                onmouseover="opacityInc('leftFirstOverlay')"
-                onmouseout="opacityDec('leftFirstOverlay')"
-                class="slideHeading"
-                data-key="slideHeadingThird"
-              >
-                CSR <br />
-                <span class="subHeading">
-                  Uvek uz vas na pravom putu. Na kome ostavljamo trag</span
-                >
-              </h2>
-            </div>
-            <div class="leftSecondHalf">
-              <div class="leftSecondOverlay left3-2"></div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="ms-right">
@@ -293,26 +265,22 @@
                 class="slideDescription"
                 data-key="slideDescriptionFirst"
               >
-                Naše višegodišnje internacionalno iskustvo, uspeh u poslovnom
-                upravljanju i znanje i veštine u upravljanju projektima
-                garantuju da će naši saveti u domenu poslovnih funkcija vaših
-                firmi zadovoljiti vaša očekivanja.
+
               </p>
             </div>
           </div>
           <!-- ispod ide logo -->
-          <img
+          <!-- <img
             src="../../assets/pictures/LOGO_text.png"
             alt="logo"
             class="slideLogoText"
-          />
+          /> -->
           <img
             src="../../assets/pictures/LOGO_orah.png"
             alt="logo"
             class="slideLogoOrah"
           />
         </div>
-
 
         <!-- second right slide -->
 
@@ -334,34 +302,22 @@
                 class="slideDescription"
                 data-key="slideDescriptionSecond"
               >
-                Naš tim eksperata do sada je realizovao investicije u vrednosti
-                više milijardi dolara. U realizaciji investicione gradnje za nas
-                praktično nema nepoznanica, od izrade svih vrsta studija,
-                investicione analize alternativnih rešenja i strukturiranja
-                kapitala do urbanističkog planiranja i arhitektonsko tehničkih
-                rešenja, izrade projektno tehničke dokumentacije, pribavljanja
-                svih vrsta dozvola i rešenja za gradnju, vođenja gradnje i
-                nabavke svih vrsta materijala, opreme i usluga, vršenja usluge
-                stručnog nadzora, upravljanja troškovima i pribavljanja dozvola
-                za upotrebu objekata i zastupanja investitora pred nadležnim
-                organima.
+ 
               </p>
             </div>
           </div>
           <!-- ispod ide logo -->
-          <img
+          <!-- <img
             src="../../assets/pictures/LOGO_text.png"
             alt="logo"
             class="slideLogoText"
-          />
+          /> -->
           <img
             src="../../assets/pictures/LOGO_orah.png"
             alt="logo"
             class="slideLogoOrah"
           />
         </div>
-
-       
 
         <!-- third right slide -->
 
@@ -383,29 +339,22 @@
                 class="slideDescription"
                 data-key="slideDescriptionThird"
               >
-                Upravljanje projektima i upravljanje pomoću projekata je srž
-                našeg poslovanja. Svaki put na koji polazimo sastoji se od više
-                koraka. Na tom putu nas očekuju izazovi, iskušenja, koja težimo
-                da prevaziđemo. Do vašeg cilja želimo da sve vreme uživate i
-                osećate se sigurno i bezbedno. Potom želimo da pođemo na novi
-                put. To su vaši projekti. To je smisao vašeg poslovanja.
+
               </p>
             </div>
           </div>
           <!-- ispod ide logo -->
-          <img
+          <!-- <img
             src="../../assets/pictures/LOGO_text.png"
             alt="logo"
             class="slideLogoText"
-          />
+          /> -->
           <img
             src="../../assets/pictures/LOGO_orah.png"
             alt="logo"
             class="slideLogoOrah"
           />
         </div>
-
-       
 
         <!-- fourth right slide -->
 
@@ -425,21 +374,18 @@
                 onmouseover="opacityInc('rightSecondOverlay')"
                 onmouseout="opacityDec('rightSecondOverlay')"
                 class="slideDescription"
-                data-key="slideDescriptionThird"
+                data-key="slideDescriptionFourth"
               >
-                Pravna podrška našeg tima u domenu privrednog i poslovnog prava
-                je garancija adekvatnog oblika onoga što činimo zajedno:
-                imovinsko pravni odnosi, korporativno pravo, ugovorno pravo i
-                upravni postupci.
+    
               </p>
             </div>
           </div>
           <!-- ispod ide logo -->
-          <img
+          <!-- <img
             src="../../assets/pictures/LOGO_text.png"
             alt="logo"
             class="slideLogoText"
-          />
+          /> -->
           <img
             src="../../assets/pictures/LOGO_orah.png"
             alt="logo"
@@ -448,45 +394,6 @@
         </div>
 
         <!-- fifth right slide -->
-
-        <div class="ms-section fifth" style="background-position: left top;">
-          <div class="container">
-            <div class="rightFirstHalf">
-              <div class="rightFirstOverlay right3-1"></div>
-            </div>
-            <div
-              onmouseover="opacityInc('rightSecondOverlay')"
-              onmouseout="opacityDec('rightSecondOverlay')"
-              class="rightSecondHalf"
-            >
-              <div class="rightSecondOverlay right3-2"></div>
-
-              <p
-                onmouseover="opacityInc('rightSecondOverlay')"
-                onmouseout="opacityDec('rightSecondOverlay')"
-                class="slideDescription"
-                data-key="slideDescriptionThird"
-              >
-                Koncept našeg poslovanja se zasniva na društvenoj odgovornosti,
-                Iako neizostavni deo javne debate o svrsi biznisa i sastavni deo
-                novog i održivog ekonomskog modela, CSR je naša filozofija i
-                predmet naučno istraživačkog rada za korist naših klijenata i
-                društva u celini.
-              </p>
-            </div>
-          </div>
-          <!-- ispod ide logo -->
-          <img
-            src="../../assets/pictures/LOGO_text.png"
-            alt="logo"
-            class="slideLogoText"
-          />
-          <img
-            src="../../assets/pictures/LOGO_orah.png"
-            alt="logo"
-            class="slideLogoOrah"
-          />
-        </div>
       </div>
     </div>
   </body>

@@ -40,17 +40,21 @@ h1 {
   margin-top: 8%;
   color: whitesmoke;
   font-weight: 300;
-  font-size: 250%;
-  text-transform: capitalize;
+  font-size: 40px;
+  text-transform: inherit;
 }
+
 h4 {
+  font-size: 18px;
   width: 100%;
   text-align: center;
   font-weight: 200;
   color: whitesmoke;
+  padding: 0 5%;
 }
 p {
-  padding: 0 15%;
+  font-size: 20px;
+  padding: 0 5%;
   color: whitesmoke;
   line-height: 140%;
   text-align: center;
@@ -71,6 +75,11 @@ p {
   right: 2%;
   z-index: 1;
 }
+.logoHeading {
+  width: 50px;
+  height: 50px;
+}
+
 @media screen and (min-width: 769px) {
   .slideLogoOrah {
     bottom: 1%;
@@ -84,6 +93,10 @@ p {
     z-index: 2;
     margin-top: 0px;
     margin-right: -1px;
+  }
+  .logoHeading {
+    width: 60px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -114,8 +127,15 @@ p {
     width: 100%;
     background: linear-gradient(to bottom, #91afc300, #000000);
   }
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
   h4 {
-    padding: 6% 0px;
+    font-size: 14px;
+    padding: 6% 10px;
   }
 }
 
@@ -128,12 +148,20 @@ p {
   .first-half {
     padding-bottom: 15%;
   }
+  .logoHeading {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .slideLogoOrah {
     transform: scale(1);
     bottom: 2%;
     right: 0.5%;
+  }
+  .logoHeading {
+    width: 80px;
+    height: 80px;
   }
   .slideLogoText {
     top: 2%;
@@ -147,6 +175,10 @@ p {
   h1 {
     margin-top: 10%;
     font-size: 60px;
+  }
+  .logoHeading {
+    width: 150px;
+    height: 150px;
   }
   p {
     font-size: 30px;

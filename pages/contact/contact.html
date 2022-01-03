@@ -32,7 +32,7 @@
       <div class="nav-header">
         <div class="nav-title">
           <img
-            src="../../assets/pictures/CONSENT_logo_fix.png"
+            src="../../assets/pictures/CONSENT_logo_fix_white.png"
             alt="nav-logo"
           />
         </div>
@@ -45,39 +45,47 @@
         </label>
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
-        <li><a href="/index.html" id="home" data-key="navHome">Početna</a></li>
-        <li>
-          <a
-            href="/pages/whatWeOffer/whatWeOffer.html"
-            id="whatWeOffer"
-            data-key="navOffer"
-            >Šta Nudimo</a
-          >
-        </li>
+        <li><a href="/index.html" id="home" data-key="navHome"></a></li>
         <li>
           <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
-            >Naš Tim</a
+            ></a
           >
         </li>
         <li>
+          <a
+          href="/pages/whatWeOffer/whatWeOffer.html"
+          id="whatWeOffer"
+          data-key="navOffer"
+            ></a
+            >
+          </li>
+        <li>
+          <a
+          href="/pages/CSR/csr.html"
+          id="CSR"
+          data-key="navCSR"
+            ></a
+            >
+          </li>
+          <li>
           <a
             href="/pages/contact/contact.html"
             id="contact"
             data-key="navContact"
-            >Kontakt</a
+            ></a
           >
         </li>
       </ul>
-      <!-- <div class="custom-select">
+     <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
 
         <select id="language" onchange="changeLanguage()">
           <option value="gb">English</option>
-          <option value="rs">Serbian</option>
-          <option value="ru">Russian</option>
-          <option value="it">Italian</option>
+          <option value="rs">Srpski</option>
+          <option value="it">Italiano</option>
+          <option value="ru">Русский</option>
         </select>
-      </div> -->
+      </div> 
     </div>
   </header>
   <!-- 
@@ -85,7 +93,7 @@
     onLoadLanguage()
 
    -->
-  <body onLoad="contactFocus()">
+  <body onLoad="contactFocus(), onLoadLanguage()">
     <div class="page-content">
       <div id="map">
         <!-- <iframe
@@ -102,9 +110,9 @@
         <div id="contactPhoto"></div>
       </div>
       <div class="formWrap">
-        <h1 id="mainHeader" data-key="contactHeadingOne">Povežite se</h1>
+        <h1 id="mainHeader" data-key="contactHeadingOne"></h1>
         <hr />
-        <h1 data-key="contactHeadingTwo">Stupite u kontakt</h1>
+        <h1 data-key="contactHeadingTwo"></h1>
         <form
           id="contactForm"
           class="contact-form"
@@ -118,50 +126,56 @@
             value="51bf3312-1d5a-44c4-bd9d-969c16494af3"
           />
           <input
+            id="name"
             type="text"
             class="text-input"
             name="name"
-            placeholder="Name"
             required
           /><br />
           <!-- <label for="email"
           >Your Email Adress: <span class="required">*</span></label
         > -->
           <input
+          id="email"
             type="email"
             class="text-input"
             name="email"
-            placeholder="Email"
             required
           /><br />
           <input
+          id="subject"
             type="text"
             name="subject"
             class="text-input"
-            placeholder="Subject"
             required
           />
           <input type="text" name="honeypot" style="display: none" />
           <!-- <label for="message"
             >Your Message: <span class="required">*</span></label
           > -->
-          <textarea name="message" placeholder="Message" required></textarea
+          <textarea id="message" name="message"  required></textarea
           ><br />
           <input
             type="hidden"
             name="redirectTo"
             value="https://consent.team/pages/contact/contact.html"
           />
-          <input
+          <!-- <input
             type="button"
             value="POŠALJI"
             id="btnSubmit"
             class="send"
             onclick="submitForm()"
-          />
+          /> -->
+          <button type="submit"
+          id="btnSubmit"
+          class="send"
+          onclick="submitForm()"
+          data-key="contactFormBtn"
+          ></button>
         </form>
         <hr />
-        <h1 data-key="contactHeadingThree">Drugi način</h1>
+        <h1 data-key="contactHeadingThree"></h1>
         <div class="otherWayInfo">
           <p>
             <span class="contact-mail">team@consent.team</span> <br />
@@ -171,10 +185,9 @@
             </span>
           </p>
           <p class="address">
-            <span
-              >Milutina Milankovića 28 <br />
-              11070 Beograd</span
-            >
+            <span data-key="contactAddressFirst"></span>
+              <br/>
+            <span data-key="contactAddressSecond"></span>
           </p>
         </div>
       </div>

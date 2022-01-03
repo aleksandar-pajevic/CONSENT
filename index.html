@@ -19,6 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="index.css" />
 
     <script src="index.js"></script>
@@ -30,7 +33,10 @@
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
         <div class="nav-title">
-          <img src="assets/pictures/CONSENT_logo_fix.png" alt="nav-logo" />
+          <img
+            src="assets/pictures/CONSENT_logo_fix_white.png"
+            alt="nav-logo"
+          />
         </div>
       </div>
       <div class="nav-btn">
@@ -41,39 +47,41 @@
         </label>
       </div>
       <ul class="nav-links" onclick="whosActive(event)">
-        <li><a href="/index.html" id="home" data-key="navHome">Početna</a></li>
+        <li><a href="/index.html" id="home" data-key="navHome"></a></li>
+        <li>
+          <a
+            href="/pages/ourTeam/ourTeam.html"
+            id="ourTeam"
+            data-key="navTeam"
+          ></a>
+        </li>
         <li>
           <a
             href="/pages/whatWeOffer/whatWeOffer.html"
             id="whatWeOffer"
             data-key="navOffer"
-            >Šta Nudimo</a
-          >
+          ></a>
         </li>
         <li>
-          <a href="/pages/ourTeam/ourTeam.html" id="ourTeam" data-key="navTeam"
-            >Naš Tim</a
-          >
+          <a href="/pages/CSR/csr.html" id="CSR" data-key="navCSR"></a>
         </li>
         <li>
           <a
             href="/pages/contact/contact.html"
             id="contact"
             data-key="navContact"
-            >Kontakt</a
-          >
+          ></a>
         </li>
       </ul>
-      <!-- <div class="custom-select">
+      <div class="custom-select">
         <span id="flag" class="flag-icon flag-icon-gb"></span>
         <select id="language" onchange="changeLanguage()">
           <option value="gb">English</option>
-          <option value="rs">Serbian</option>
-          <option value="ru">Russian</option>
-
-          <option value="it">Italian</option>
+          <option value="rs">Srpski</option>
+          <option value="it">Italiano</option>
+          <option value="ru">Русский</option>
         </select>
-      </div> -->
+      </div>
     </div>
   </header>
   <!-- 
@@ -81,7 +89,7 @@
     onLoadLanguage()
 
    -->
-  <body onLoad="homeFocus() ">
+  <body onLoad="homeFocus(), onLoadLanguage()">
     <div class="home">
       <div class="oneHalf" id="firstHalf">
         <div class="leftFirstHalf">
@@ -93,11 +101,9 @@
           <h2
             onmouseover="opacityInc('leftFirstOverlay')"
             onmouseout="opacityDec('leftFirstOverlay')"
-            class="slideHeading"
-            data-key="slideHeadingFirst"
-          >
-            Naša misija je da vas oslobodimo poslovnog napora
-          </h2>
+            class="slideHeading handwritten"
+            data-key="homeHeading"
+          ></h2>
         </div>
         <div class="leftSecondHalf">
           <div class="leftSecondOverlay left1-2"></div>
@@ -113,24 +119,21 @@
             onmouseout="opacityDec('rightSecondOverlay')"
             class="rightSecondOverlay right1-2"
           ></div>
-          <p
+          <div
             onmouseover="opacityInc('rightSecondOverlay')"
             onmouseout="opacityDec('rightSecondOverlay')"
             class="slideDescription"
-            data-key="slideDescriptionFirst"
           >
-            <span class="spanSecond"
-              >"Geniji su one osobe pored kojih kada staneš ne osećaš nikakav
-              napor.<br />
-              Eto ko su geniji." <br />
-              <span id="paolo">Paolo Sorrentino</span>
-            </span>
-
-            <span class="spanFirst">
-              Jedini limiti koji postoje su oni koje sebi postavljamo. To ne
-              činimo, inspirisani da uspemo u svemu.
-            </span>
-          </p>
+            <span class="spanFirst" data-key="homeSpanFirst"> </span>
+            <div class="wraper handwritten">
+              <span class="spanSecond" data-key="homeSpanSecond"></span>
+              <span
+                id="paolo"
+                class="spanSecond"
+                data-key="homeSpanThird"
+              ></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

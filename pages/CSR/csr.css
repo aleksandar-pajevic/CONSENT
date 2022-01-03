@@ -1,0 +1,11 @@
+#firstHalf {
+  background-image: url(../../assets/pictures/whatWeOffer/5-1-min.jpg);
+  background-position: right top;
+}
+#secondHalf {
+  background-image: url(../../assets/pictures/whatWeOffer/5-2-min.jpg);
+  background-position: left top;
+}
+.spanFirst {
+  transform: scale(0.8);
+}
